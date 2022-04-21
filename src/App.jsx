@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from "react";
+
 import Layout from "./components/layout/Layout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
@@ -6,6 +8,7 @@ import { AccountBox } from "./components/accountBox";
 import PageOne from "./pages/PageOne";
 import PageTwo from "./pages/PageTwo";
 import PageThree from "./pages/PageThree";
+import scrollreveal from "scrollreveal";
 
 function App() {
   return (
