@@ -17,7 +17,8 @@
       .card-series {
         color: var(--orange);
         text-transform: uppercase;
-        font-size: 0.7rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
       }
       .card-top {
         color: var(--accent-color3);
@@ -44,9 +45,19 @@
       display: flex;
       justify-content: space-between;
       span {
+        margin-top: 0.2rem;
         color: var(--accent-color3);
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        max-width: 16rem;
       }
+    }
+  }
+  &--button {
+    &__container {
+      margin: 0.2rem auto;
+    }
+    &__button {
+      
     }
   }
 }

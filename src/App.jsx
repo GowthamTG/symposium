@@ -8,7 +8,6 @@ import { AccountBox } from "./components/accountBox";
 import PageOne from "./pages/PageOne";
 import PageTwo from "./pages/PageTwo";
 import PageThree from "./pages/PageThree";
-import scrollreveal from "scrollreveal";
 
 function App() {
   return (
