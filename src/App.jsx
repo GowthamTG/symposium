@@ -26,7 +26,7 @@ function App() {
           <Route path="/auth" element={<AccountBox />}></Route>
           <Route path="/page-one" element={<PageOne />}></Route>
           <Route path="/page-two" element={<PageTwo />}></Route>
-          <Route path="/page-three" element={<Events />}></Route>
+          <Route path="/events" element={<Events />}></Route>
           <Route path="/admin" element={<AdminHome />}></Route>
           <Route path="/admin/event/:id" element={<AdminEvent />}></Route>
         </Routes>

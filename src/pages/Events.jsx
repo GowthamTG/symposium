@@ -1,6 +1,7 @@
 import React from "react";
-import Card from "../components/card/Card";
+import EventCard from "../components/card/Card";
 
+import { CardGroup, Card } from "react-bootstrap";
 import super1 from "../assets/super1.png";
 import super2 from "../assets/super2.png";
 import super3 from "../assets/super3.png";
@@ -52,7 +53,7 @@ const Events = () => {
       </div>
       <div className="event__cards">
         {events.map((event) => (
-          <Card
+          <EventCard
             key={event.title}
             image={event.image}
             series={event.series}

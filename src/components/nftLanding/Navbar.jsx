@@ -4,6 +4,7 @@ import { MdClose } from "react-icons/md";
 import { ImSun } from "react-icons/im";
 import { BsFillMoonFill } from "react-icons/bs";
 import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 export default function Navbar({ changeTheme, currentTheme }) {
   const [navState, setNavState] = useState(false);
   return (
@@ -32,16 +33,16 @@ export default function Navbar({ changeTheme, currentTheme }) {
       <div className={`links-container ${navState ? "nav-visible" : ""}`}>
         <ul className="links">
           <li>
-            <a href="#features">Features</a>
+            <Link to="">Features</Link>
           </li>
           <li>
-            <a href="#about">About</a>
+            <Link to="">About</Link>
           </li>
           <li>
-            <a href="#launch">Launch</a>
+            <Link to="events">Events</Link>
           </li>
           <li>
-            <a href="#signup">Sign Up</a>
+            <Link to="signup">Sign Up</Link>
           </li>
           <li onClick={changeTheme}>
             {currentTheme === "dark" ? (
