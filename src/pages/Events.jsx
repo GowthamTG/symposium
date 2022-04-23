@@ -1,11 +1,13 @@
 import React from "react";
 import EventCard from "../components/card/Card";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-import { CardGroup, Card } from "react-bootstrap";
 import super1 from "../assets/super1.png";
 import super2 from "../assets/super2.png";
 import super3 from "../assets/super3.png";
 import super4 from "../assets/super4.png";
+import { Link } from "react-router-dom";
 
 const Events = () => {
   const events = [
@@ -48,7 +50,7 @@ const Events = () => {
         <h2 className="page--title">EVENTS</h2>
         <p className="description">
           We have released four limited edition NFT's early which which can be
-          bid on via <a href="#">OpenSea</a>.
+          bid on via <Link to="">OpenSea</Link>.
         </p>
       </div>
       <div className="event__cards">

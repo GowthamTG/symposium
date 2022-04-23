@@ -4,10 +4,9 @@ import { LoginForm } from "./loginForm";
 import { motion } from "framer-motion";
 import { AccountContext } from "./accountContext";
 import { SignupForm } from "./signupForm";
-
+import "./bgstyle.css";
 const BoxContainer = styled.div`
   width: 600px;
-  min-width: 180px;
   min-height: 550px;
   display: flex;
   flex-direction: column;
@@ -78,6 +77,36 @@ const InnerContainer = styled.div`
   margin: 1rem 0rem;
 `;
 
+const MainContainer = styled.div`
+  min-height: 692px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 50;
+  overflow: hidden;
+  padding-top: 64px;
+  display: -ms-grid;
+  display: grid;
+  justify-content: center;
+  margin: 0 -2%;
+  transform: rotate(-12deg) skew(-12deg);
+`;
+
+const LayerOne = styled.div`
+  box-sizing: border-box;
+  display: flex;
+`;
+
+const LayerTwo = styled.div`
+  display: flex;
+  grid-area: top / start / 8 / end;
+  flex-grow: 1;
+  animation: animationLeftRight 3s ease-in-out infinite;
+  box-shadow: inset 0 0 0 2px #e3e8ee;
+  flex-grow: 1;
+`;
+
 const backdropVariants = {
   expanded: {
     width: "233%",
@@ -125,9 +154,38 @@ export function AccountBox(props) {
   };
 
   const contextValue = { switchToSignup, switchToSignin };
+  // console.log(active);
+  //   if(active === "signup")
+  //   {
+  //     return <SignupForm />
+  //   }
 
   return (
     <AccountContext.Provider value={contextValue}>
+      {/* <bgstyle />       */}
+      <MainContainer className="loginbackground-gridContainer">
+        <LayerOne style={{ "grid-area": " 4 / 2 / auto / 5" }}>
+          <LayerTwo style={{ "background-color": "rgb(241, 216, 15)" }} />
+        </LayerOne>
+        <LayerOne style={{ "grid-area": "6 / start / auto / 2" }}>
+          <LayerTwo style={{ "background-color": "rgb(241, 196, 15)" }} />
+        </LayerOne>
+        <LayerOne style={{ "grid-area": "7 / start / auto / 4" }}>
+          <LayerTwo style={{ "background-color": "#e3e8ee" }} />
+        </LayerOne>
+        <LayerOne style={{ "grid-area": "8 / 4 / auto / 6" }}>
+          <LayerTwo style={{ "background-color": "rgb(241, 190, 15)" }} />
+        </LayerOne>
+        <LayerOne style={{ "grid-area": "2 / 15 / auto / end" }}>
+          <LayerTwo style={{ "background-color": "rgb(241, 216, 15)" }} />
+        </LayerOne>
+        <LayerOne style={{ "grid-area": "3 / 14 / auto / end" }}>
+          <LayerTwo style={{ "background-color": "#e3e8ee" }} />
+        </LayerOne>
+        <LayerOne style={{ "grid-area": "4 / 17 / auto / 20" }}>
+          <LayerTwo style={{ "background-color": "rgb(241, 196, 15)" }} />
+        </LayerOne>
+      </MainContainer>
       <BoxContainer>
         <TopContainer>
           <BackDrop
