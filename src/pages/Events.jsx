@@ -6,7 +6,7 @@ import super2 from "../assets/super2.png";
 import super3 from "../assets/super3.png";
 import super4 from "../assets/super4.png";
 
-const PageThree = () => {
+const Events = () => {
   const events = [
     {
       image: super1,
@@ -67,4 +67,4 @@ const PageThree = () => {
   );
 };
 
-export default PageThree;
+export default Events;

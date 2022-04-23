@@ -58,14 +58,14 @@
         background-color: var(--pink);
       }
     }
-    .card-container {
+    .event__card-container {
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
       z-index: 1;
       overflow: hidden;
-      .card-image {
+      .event__card-image {
         img {
           height: 14rem;
         }
@@ -112,7 +112,7 @@
       .image {
         zoom: 0.5;
       }
-      .card-container {
+      .event__card-container {
         zoom: 0.5;
       }
       .ellipse {

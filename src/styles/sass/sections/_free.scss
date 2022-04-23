@@ -53,27 +53,27 @@
     position: absolute;
     top: -2rem;
     right: 40%;
-    .card1 {
+    .event__card1 {
       top: 0;
       position: absolute;
       transform: rotate(-10deg);
       z-index: 3;
       font-size: 0.6rem;
-      .card-image {
+      .event__card-image {
         img {
           height: 10rem;
           width: 12rem;
         }
       }
     }
-    .card2 {
+    .event__card2 {
       top: 0;
       z-index: 2;
       position: absolute;
       left: 10rem;
       transform: rotate(5deg);
       font-size: 0.7rem;
-      .card-image {
+      .event__card-image {
         img {
           height: 10rem;
         }
@@ -104,8 +104,8 @@
       }
     }
     .event__cards {
-      .card1,
-      .card2 {
+      .event__card1,
+      .event__card2 {
         zoom: 0.3;
       }
     }

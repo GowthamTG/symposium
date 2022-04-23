@@ -1,10 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import "./styles/index.scss";
-import "./styles/sass/index.scss";
-// import "./styles/sass/scss/main.scss";
-// import "bootstrap/dist/css/bootstrap.min.css";
+
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "./Context";
@@ -17,11 +13,11 @@ import { ThemeProvider } from "./Context";
 // );
 
 ReactDOM.render(
-  <ThemeProvider>
-    <React.StrictMode>
+  <React.StrictMode>
+    <ThemeProvider>
       <App />
-    </React.StrictMode>
-  </ThemeProvider>,
+    </ThemeProvider>
+  </React.StrictMode>,
   document.getElementById("root")
 );
 
