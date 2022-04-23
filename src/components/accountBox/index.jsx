@@ -4,7 +4,8 @@ import { LoginForm } from "./loginForm";
 import { motion } from "framer-motion";
 import { AccountContext } from "./accountContext";
 import { SignupForm } from "./signupForm";
-import "./bgstyle.css";
+import "./index.css";
+
 const BoxContainer = styled.div`
   width: 600px;
   min-height: 550px;
@@ -85,7 +86,7 @@ const MainContainer = styled.div`
   right: 0;
   top: 50;
   overflow: hidden;
-  padding-top: 64px;
+  padding-top: 200px;
   display: -ms-grid;
   display: grid;
   justify-content: center;
@@ -102,7 +103,6 @@ const LayerTwo = styled.div`
   display: flex;
   grid-area: top / start / 8 / end;
   flex-grow: 1;
-  animation: animationLeftRight 3s ease-in-out infinite;
   box-shadow: inset 0 0 0 2px #e3e8ee;
   flex-grow: 1;
 `;
@@ -162,28 +162,48 @@ export function AccountBox(props) {
 
   return (
     <AccountContext.Provider value={contextValue}>
-      {/* <bgstyle />       */}
-      <MainContainer className="loginbackground-gridContainer">
+      <MainContainer className="gridContainer">
         <LayerOne style={{ "grid-area": " 4 / 2 / auto / 5" }}>
-          <LayerTwo style={{ "background-color": "rgb(241, 216, 15)" }} />
+          <LayerTwo
+            style={{ "background-color": "rgb(241, 216, 15)" }}
+            className="animationLeftRight tans3s"
+          />
         </LayerOne>
         <LayerOne style={{ "grid-area": "6 / start / auto / 2" }}>
-          <LayerTwo style={{ "background-color": "rgb(241, 196, 15)" }} />
+          <LayerTwo
+            style={{ "background-color": "rgb(241, 196, 15)" }}
+            className="animationRightLeft tans4s"
+          />
         </LayerOne>
         <LayerOne style={{ "grid-area": "7 / start / auto / 4" }}>
-          <LayerTwo style={{ "background-color": "#e3e8ee" }} />
+          <LayerTwo
+            style={{ "background-color": "#e3e8ee" }}
+            className="animationLeftRight"
+          />
         </LayerOne>
         <LayerOne style={{ "grid-area": "8 / 4 / auto / 6" }}>
-          <LayerTwo style={{ "background-color": "rgb(241, 190, 15)" }} />
+          <LayerTwo
+            style={{ "background-color": "rgb(241, 190, 15)" }}
+            className="animationRightLeft tans4s"
+          />
         </LayerOne>
         <LayerOne style={{ "grid-area": "2 / 15 / auto / end" }}>
-          <LayerTwo style={{ "background-color": "rgb(241, 216, 15)" }} />
+          <LayerTwo
+            style={{ "background-color": "rgb(241, 216, 15)" }}
+            className="animationRightLeft"
+          />
         </LayerOne>
         <LayerOne style={{ "grid-area": "3 / 14 / auto / end" }}>
-          <LayerTwo style={{ "background-color": "#e3e8ee" }} />
+          <LayerTwo
+            style={{ "background-color": "#e3e8ee" }}
+            className="animationRightLeft tans4s"
+          />
         </LayerOne>
         <LayerOne style={{ "grid-area": "4 / 17 / auto / 20" }}>
-          <LayerTwo style={{ "background-color": "rgb(241, 196, 15)" }} />
+          <LayerTwo
+            style={{ "background-color": "rgb(241, 196, 15)" }}
+            className="animationRightLeft tans3s"
+          />
         </LayerOne>
       </MainContainer>
       <BoxContainer>

@@ -1,7 +1,7 @@
 import React from "react";
 import EventCard from "../components/card/Card";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+// import Carousel from "react-multi-carousel";
+// import "react-multi-carousel/lib/styles.css";
 
 import super1 from "../assets/super1.png";
 import super2 from "../assets/super2.png";

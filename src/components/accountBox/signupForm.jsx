@@ -10,7 +10,6 @@ import {
 import { Marginer } from "../marginer";
 import { AccountContext } from "./accountContext";
 import { useForm } from "react-hook-form";
-import bgstyle from "./bgstyle";
 
 export function SignupForm(props) {
   const { register, errors, handleSubmit, watch } = useForm({});
