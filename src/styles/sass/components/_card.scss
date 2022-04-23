@@ -2,6 +2,11 @@
   background-color: var(--card-color);
   width: max-content;
   border-radius: 1rem;
+  transition: all;
+  transition-duration: 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
   &-image {
     img {
     }
@@ -62,4 +67,8 @@
   &--container {
     display: flex;
   }
+}
+
+.center {
+  border: red 2px solid;
 }
