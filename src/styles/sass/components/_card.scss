@@ -1,4 +1,4 @@
-.card {
+.event__card {
   background-color: var(--card-color);
   width: max-content;
   border-radius: 1rem;
@@ -11,28 +11,28 @@
     flex-direction: column;
     gap: 0.5rem;
     padding: 1rem;
-    .card-heading {
+    .event__card-heading {
       display: flex;
       justify-content: space-between;
-      .card-series {
+      .event__card-series {
         color: var(--orange);
         text-transform: uppercase;
         font-size: 1.2rem;
         letter-spacing: 0.1rem;
       }
-      .card-top {
+      .event__card-top {
         color: var(--accent-color3);
         text-transform: uppercase;
         font-size: 0.7rem;
       }
     }
-    .card-details {
+    .event__card-details {
       display: flex;
       justify-content: space-between;
       color: var(--accent-color1);
-      .card-title {
+      .event__card-title {
       }
-      .card-price {
+      .event__card-price {
         display: flex;
         gap: 1rem;
         img {
@@ -41,7 +41,7 @@
         }
       }
     }
-    .card-sub-details {
+    .event__card-sub-details {
       display: flex;
       justify-content: space-between;
       span {
@@ -57,7 +57,6 @@
       margin: 0.2rem auto;
     }
     &__button {
-      
     }
   }
 }

@@ -18,7 +18,7 @@
       }
     }
   }
-  .cards {
+  .event__cards {
     display: flex;
     justify-content: space-evenly;
     gap: 5rem;
@@ -29,7 +29,7 @@
   .super-rare {
     padding: 1rem 2rem;
     width: 100vw;
-    .cards {
+    .event__cards {
       overflow: auto;
       justify-content: flex-start;
       gap: 2rem;

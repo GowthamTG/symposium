@@ -50,7 +50,7 @@ const PageThree = () => {
           bid on via <a href="#">OpenSea</a>.
         </p>
       </div>
-      <div className="cards">
+      <div className="event__cards">
         {events.map((event) => (
           <Card
             key={event.title}

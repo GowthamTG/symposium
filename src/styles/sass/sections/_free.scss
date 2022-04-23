@@ -48,7 +48,7 @@
       }
     }
   }
-  .cards {
+  .event__cards {
     display: flex;
     position: absolute;
     top: -2rem;
@@ -103,7 +103,7 @@
         }
       }
     }
-    .cards {
+    .event__cards {
       .card1,
       .card2 {
         zoom: 0.3;

@@ -5,31 +5,31 @@ import classes from "./card.module.scss";
 
 export default function Card({ image, series, title, price, tag, time }) {
   return (
-    <div className="card">
-      <div className="card-image">
+    <div className="event__card">
+      <div className="event__card-image">
         <img src={image} alt="super1" />
       </div>
-      <div className="card-content">
-        <div className="card-heading">
-          {/* <span className="card-series">{series}</span> */}
-          <div class={classes.box}>
-            <div class={classes.title}>
-              <span class={classes.block}></span>
+      <div className="event__card-content">
+        <div className="event__card-heading">
+          {/* <span className="event__card-series">{series}</span> */}
+          <div className={classes.box}>
+            <div className={classes.title}>
+              <span className={classes.block}></span>
               <h1>
                 Event Name<span></span>
               </h1>
             </div>
           </div>
-          {/* <span className="card-top">Top bid</span> */}
+          {/* <span className="event__card-top">Top bid</span> */}
         </div>
-        <div className="card-details">
-          <h4 className="card-title">{title}</h4>
-          <div className="card-price">
+        <div className="event__card-details">
+          <h4 className="event__card-title">{title}</h4>
+          <div className="event__card-price">
             {/* <img src={superEth} alt="super eth" />
             <h4>{price} ETH</h4> */}
           </div>
         </div>
-        <div className="card-sub-details">
+        <div className="event__card-sub-details">
           {/* <span>#{tag}</span> */}
           <span>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus
@@ -39,7 +39,7 @@ export default function Card({ image, series, title, price, tag, time }) {
 
           {/* <span>{time} day left</span> */}
         </div>
-        <div className="card--button__container">
+        <div className="event__card--button__container">
           <button className={classes.glowonhover}>Know More</button>
         </div>
       </div>
