@@ -1,0 +1,15 @@
+.datatable {
+  height: 580px;
+  padding: 20px;
+  width: 80%;
+
+  .datatableTitle {
+    width: 100%;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
