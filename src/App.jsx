@@ -16,6 +16,7 @@ import PageTwo from "./pages/PageTwo";
 import Events from "./pages/Events";
 import AdminHome from "./pages/Admin/AdminHome";
 import AdminEvent from "./pages/Admin/AdminEvent";
+import EventsDetails from "./pages/EventsDetails/EventsDetails";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/page-one" element={<PageOne />}></Route>
           <Route path="/page-two" element={<PageTwo />}></Route>
           <Route path="/events" element={<Events />}></Route>
+          <Route path="/events/:id" element={<EventsDetails />}></Route>
           <Route path="/admin" element={<AdminHome />}></Route>
           <Route path="/admin/event/:id" element={<AdminEvent />}></Route>
         </Routes>

@@ -16,6 +16,7 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 const Events = () => {
   const events = [
     {
+      id: 1,
       image: super1,
       series: "Gloop Series",
       title: "Technical",
@@ -24,6 +25,7 @@ const Events = () => {
       time: 1,
     },
     {
+      id: 2,
       image: super2,
       series: "Gloop Series",
       title: "Non Technical",
@@ -32,6 +34,7 @@ const Events = () => {
       time: 1,
     },
     {
+      id: 3,
       image: super3,
       series: "Gloop Series",
       title: "Technical",
@@ -40,6 +43,7 @@ const Events = () => {
       time: 1,
     },
     {
+      id: 4,
       image: super4,
       series: "Gloop Series",
       title: "Non Technical",
@@ -48,6 +52,7 @@ const Events = () => {
       time: 2,
     },
     {
+      id: 5,
       image: super4,
       series: "Gloop Series",
       title: "Non Technical",
@@ -56,6 +61,7 @@ const Events = () => {
       time: 3,
     },
     {
+      id: 6,
       image: super4,
       series: "Gloop Series",
       title: "Non Technical",
@@ -135,6 +141,7 @@ const Events = () => {
               {events.map((event) => (
                 <EventCard
                   key={event.time}
+                  id={event.id}
                   image={event.image}
                   series={event.series}
                   title={event.title}

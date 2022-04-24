@@ -1,9 +1,9 @@
 import React from "react";
 import superEth from "../../assets/supereth.png";
-
+import { Link } from "react-router-dom";
 import classes from "./card.module.scss";
 
-export default function Card({ image, series, title, price, tag, time }) {
+export default function Card({ id, image, series, title, price, tag, time }) {
   return (
     <div className="event__card">
       <div className="event__card-image">
@@ -40,7 +40,9 @@ export default function Card({ image, series, title, price, tag, time }) {
           {/* <span>{time} day left</span> */}
         </div>
         <div className="event__card--button__container">
-          <button className={classes.glowonhover}>Know More</button>
+          <Link to={`/events/${id}`}>
+            <button className={classes.glowonhover}>Know More</button>
+          </Link>
         </div>
       </div>
     </div>
