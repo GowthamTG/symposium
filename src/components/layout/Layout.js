@@ -17,12 +17,12 @@ const Layout = ({ children }) => {
   }
   return (
     <>
-      <Header />
+      {/* <Header /> */}
 
-      {/* <div data-theme={theme} className="app-container">
-        <Navbar changeTheme={changeTheme} currentTheme={theme} />
-      </div> */}
-      <div className={classes.container}>{children}</div>
+      <div data-theme={theme} className="app-container">
+        <Navbar changeTheme={changeTheme} currentTheme={theme} />{" "}
+        <div>{children}</div>
+      </div>
     </>
   );
 };

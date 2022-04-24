@@ -10,9 +10,9 @@ import super2 from "../assets/super2.png";
 import super3 from "../assets/super3.png";
 import super4 from "../assets/super4.png";
 import { Link } from "react-router-dom";
-
 import Slider from "react-slick";
-
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 const Events = () => {
   const events = [
     {
@@ -65,17 +65,23 @@ const Events = () => {
     },
   ];
 
-  const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-    <div className="carousel__arrows">
-      <img src={LeftArrow} alt="prevArrow" {...props} />
-    </div>
-  );
-
-  const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-    <div className="carousel__arrows">
-      <img src={RightArrow} alt="nextArrow" {...props} />
-    </div>
-  );
+  const PreviousBtn = (props) => {
+    console.log(props);
+    const { className, onClick } = props;
+    return (
+      <div className={className} onClick={onClick}>
+        <ArrowBackIosIcon style={{ color: "gray", fontSize: "45px" }} />
+      </div>
+    );
+  };
+  const NextBtn = (props) => {
+    const { className, onClick } = props;
+    return (
+      <div className={className} onClick={onClick}>
+        <ArrowForwardIosIcon style={{ color: "gray", fontSize: "45px" }} />
+      </div>
+    );
+  };
   const settings = {
     dots: true,
     infinite: false,
@@ -99,6 +105,7 @@ const Events = () => {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
+          dots: true,
         },
       },
       {
@@ -106,23 +113,23 @@ const Events = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
         },
       },
     ],
-    nextArrow: <SlickArrowRight />,
-    prevArrow: <SlickArrowLeft />,
+    nextArrow: <NextBtn />,
+    prevArrow: <PreviousBtn />,
   };
   return (
     <div className="super-rare">
       <div className="title-container">
         <h2 className="page--title">EVENTS</h2>
         <p className="description">
-          We have released four limited edition NFT's early which which can be
-          bid on via <Link to="">OpenSea</Link>.
+          The list of events that are going to be hosted by CSE
         </p>
       </div>
       <div className="event__cards">
-        <div className="container center">
+        <div className="container testimonial">
           <Slider {...settings}>
             {events.map((event) => (
               <EventCard
