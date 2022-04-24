@@ -7,8 +7,6 @@ import { SignupForm } from "./signupForm";
 import "./index.css";
 
 const BoxContainer = styled.div`
-  width: 600px;
-  min-height: 550px;
   display: flex;
   flex-direction: column;
   border-radius: 19px;
@@ -16,6 +14,7 @@ const BoxContainer = styled.div`
   box-shadow: 0 0 2px rgba(15, 15, 15, 0.28);
   position: relative;
   overflow: hidden;
+  margin-top: 50px;
 `;
 
 const TopContainer = styled.div`
@@ -162,78 +161,82 @@ export function AccountBox(props) {
 
   return (
     <AccountContext.Provider value={contextValue}>
-      <MainContainer className="gridContainer">
-        <LayerOne style={{ "grid-area": " 4 / 2 / auto / 5" }}>
-          <LayerTwo
-            style={{ "background-color": "rgb(241, 216, 15)" }}
-            className="animationLeftRight tans3s"
-          />
-        </LayerOne>
-        <LayerOne style={{ "grid-area": "6 / start / auto / 2" }}>
-          <LayerTwo
-            style={{ "background-color": "rgb(241, 196, 15)" }}
-            className="animationRightLeft tans4s"
-          />
-        </LayerOne>
-        <LayerOne style={{ "grid-area": "7 / start / auto / 4" }}>
-          <LayerTwo
-            style={{ "background-color": "#e3e8ee" }}
-            className="animationLeftRight"
-          />
-        </LayerOne>
-        <LayerOne style={{ "grid-area": "8 / 4 / auto / 6" }}>
-          <LayerTwo
-            style={{ "background-color": "rgb(241, 190, 15)" }}
-            className="animationRightLeft tans4s"
-          />
-        </LayerOne>
-        <LayerOne style={{ "grid-area": "2 / 15 / auto / end" }}>
-          <LayerTwo
-            style={{ "background-color": "rgb(241, 216, 15)" }}
-            className="animationRightLeft"
-          />
-        </LayerOne>
-        <LayerOne style={{ "grid-area": "3 / 14 / auto / end" }}>
-          <LayerTwo
-            style={{ "background-color": "#e3e8ee" }}
-            className="animationRightLeft tans4s"
-          />
-        </LayerOne>
-        <LayerOne style={{ "grid-area": "4 / 17 / auto / 20" }}>
-          <LayerTwo
-            style={{ "background-color": "rgb(241, 196, 15)" }}
-            className="animationRightLeft tans3s"
-          />
-        </LayerOne>
-      </MainContainer>
-      <BoxContainer>
-        <TopContainer>
-          <BackDrop
-            initial={false}
-            animate={isExpanded ? "expanded" : "collapsed"}
-            variants={backdropVariants}
-            transition={expandingTransition}
-          />
-          {active === "signin" && (
-            <HeaderContainer>
-              <HeaderText>Welcome</HeaderText>
-              <HeaderText>Back</HeaderText>
-              <SmallText>Please sign-in to continue!</SmallText>
-            </HeaderContainer>
-          )}
-          {active === "signup" && (
-            <HeaderContainer>
-              <HeaderText>Create</HeaderText>
-              <HeaderText>Account</HeaderText>
-              <SmallText>Please sign-up to continue!</SmallText>
-            </HeaderContainer>
-          )}
-        </TopContainer>
-        <InnerContainer>
-          {active === "signin" && <LoginForm />}
-          {active === "signup" && <SignupForm />}
-        </InnerContainer>
-      </BoxContainer>
+      <div className="login-root">
+        <MainContainer className="gridContainer">
+          <LayerOne style={{ "grid-area": " 4 / 2 / auto / 5" }}>
+            <LayerTwo
+              style={{ "background-color": "rgb(241, 216, 15)" }}
+              className="animationLeftRight tans3s"
+            />
+          </LayerOne>
+          <LayerOne style={{ "grid-area": "6 / start / auto / 2" }}>
+            <LayerTwo
+              style={{ "background-color": "rgb(241, 196, 15)" }}
+              className="animationRightLeft tans4s"
+            />
+          </LayerOne>
+          <LayerOne style={{ "grid-area": "7 / start / auto / 4" }}>
+            <LayerTwo
+              style={{ "background-color": "#e3e8ee" }}
+              className="animationLeftRight"
+            />
+          </LayerOne>
+          <LayerOne style={{ "grid-area": "8 / 4 / auto / 6" }}>
+            <LayerTwo
+              style={{ "background-color": "rgb(241, 190, 15)" }}
+              className="animationRightLeft tans4s"
+            />
+          </LayerOne>
+          <LayerOne style={{ "grid-area": "2 / 15 / auto / end" }}>
+            <LayerTwo
+              style={{ "background-color": "rgb(241, 216, 15)" }}
+              className="animationRightLeft"
+            />
+          </LayerOne>
+          <LayerOne style={{ "grid-area": "3 / 14 / auto / end" }}>
+            <LayerTwo
+              style={{ "background-color": "#e3e8ee" }}
+              className="animationRightLeft tans4s"
+            />
+          </LayerOne>
+          <LayerOne style={{ "grid-area": "4 / 17 / auto / 20" }}>
+            <LayerTwo
+              style={{ "background-color": "rgb(241, 196, 15)" }}
+              className="animationRightLeft tans3s"
+            />
+          </LayerOne>
+        </MainContainer>
+        <div className="form">
+          <BoxContainer>
+            <TopContainer>
+              <BackDrop
+                initial={false}
+                animate={isExpanded ? "expanded" : "collapsed"}
+                variants={backdropVariants}
+                transition={expandingTransition}
+              />
+              {active === "signin" && (
+                <HeaderContainer>
+                  <HeaderText>Welcome</HeaderText>
+                  <HeaderText>Back</HeaderText>
+                  <SmallText>Please sign-in to continue!</SmallText>
+                </HeaderContainer>
+              )}
+              {active === "signup" && (
+                <HeaderContainer>
+                  <HeaderText>Create</HeaderText>
+                  <HeaderText>Account</HeaderText>
+                  <SmallText>Please sign-up to continue!</SmallText>
+                </HeaderContainer>
+              )}
+            </TopContainer>
+            <InnerContainer>
+              {active === "signin" && <LoginForm />}
+              {active === "signup" && <SignupForm />}
+            </InnerContainer>
+          </BoxContainer>{" "}
+        </div>
+      </div>
     </AccountContext.Provider>
   );
 }
