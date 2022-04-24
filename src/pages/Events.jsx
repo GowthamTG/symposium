@@ -121,31 +121,58 @@ const Events = () => {
     prevArrow: <PreviousBtn />,
   };
   return (
-    <div className="super-rare">
-      <div className="title-container">
-        <h2 className="page--title">EVENTS</h2>
-        <p className="description">
-          The list of events that are going to be hosted by CSE
-        </p>
-      </div>
-      <div className="event__cards">
-        <div className="container testimonial">
-          <Slider {...settings}>
-            {events.map((event) => (
-              <EventCard
-                key={event.time}
-                image={event.image}
-                series={event.series}
-                title={event.title}
-                price={event.price}
-                tag={event.tag}
-                time={event.time}
-              />
-            ))}
-          </Slider>
+    <>
+      <div className="super-rare">
+        <div className="title-container">
+          <h2 className="page--title">EVENTS</h2>
+          <p className="description">
+            The list of events that are going to be hosted by CSE
+          </p>
+        </div>
+        <div className="event__cards">
+          <div className="container testimonial">
+            <Slider {...settings}>
+              {events.map((event) => (
+                <EventCard
+                  key={event.time}
+                  image={event.image}
+                  series={event.series}
+                  title={event.title}
+                  price={event.price}
+                  tag={event.tag}
+                  time={event.time}
+                />
+              ))}
+            </Slider>
+          </div>
+        </div>
+      </div>{" "}
+      <div className="super-rare">
+        <div className="title-container">
+          <h2 className="page--title">EVENTS</h2>
+          <p className="description">
+            The list of events that are going to be hosted by CSE
+          </p>
+        </div>
+        <div className="event__cards">
+          <div className="container testimonial">
+            <Slider {...settings}>
+              {events.map((event) => (
+                <EventCard
+                  key={event.time}
+                  image={event.image}
+                  series={event.series}
+                  title={event.title}
+                  price={event.price}
+                  tag={event.tag}
+                  time={event.time}
+                />
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
