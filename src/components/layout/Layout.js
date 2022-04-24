@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import Header from "../header/Header";
 
-import classes from "./Layout.module.scss";
 import { useLocation } from "react-router-dom";
 import Navbar from "../nftLanding/Navbar";
 import Particles from "react-tsparticles";

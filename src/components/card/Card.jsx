@@ -1,5 +1,5 @@
 import React from "react";
-import superEth from "../../assets/supereth.png";
+
 import { Link } from "react-router-dom";
 import classes from "./card.module.scss";
 
