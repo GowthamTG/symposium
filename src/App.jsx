@@ -16,11 +16,9 @@ import PageTwo from "./pages/PageTwo";
 import Events from "./pages/Events";
 import AdminHome from "./pages/Admin/AdminHome";
 import AdminEvent from "./pages/Admin/AdminEvent";
-<<<<<<< HEAD
 import EventRegistrationPage from "./pages/EventRegistrationPage";
-=======
 import EventsDetails from "./pages/EventsDetails/EventsDetails";
->>>>>>> 57e0167e7415d0625e9229757f2e0443b308b693
+import EventRegistrationForm from "./components/forms/EventRegistrationForm";
 
 function App() {
   return (
@@ -35,7 +33,10 @@ function App() {
           <Route path="/events/:id" element={<EventsDetails />}></Route>
           <Route path="/admin" element={<AdminHome />}></Route>
           <Route path="/admin/event/:id" element={<AdminEvent />}></Route>
-          <Route path="/event-registration" element={<EventRegistrationPage/>} ></Route>
+          <Route
+            path="/event-registration"
+            element={<EventRegistrationForm />}
+          ></Route>
         </Routes>
       </Layout>
     </BrowserRouter>

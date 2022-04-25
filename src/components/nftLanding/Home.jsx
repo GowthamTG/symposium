@@ -1,6 +1,7 @@
 import React from "react";
-import home from "../../assets/home.png";
-// import home from "../../assets/ThreadsLogo.png";
+// import home from "../../assets/home.png";
+import home from "../../assets/ThreadsLogo.png";
+import Tilt from "react-parallax-tilt";
 
 import TypeWriterText from "../landingPage/TypeWriterText/TypeWriterText";
 
@@ -23,7 +24,9 @@ export default function Home() {
         </div>
         <div className="image-container">
           <div className="image">
-            <img src={home} alt="home " />
+            <Tilt perspective={800} gyroscope={true}>
+              <img src={home} className="landing__image" alt="home" />
+            </Tilt>
           </div>
           <div className="ellipse-container">
             <div className="ellipse pink"></div>

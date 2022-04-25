@@ -41,7 +41,7 @@ const DisplayEvents = ({ eve }) => {
       <div className="display-events__container">
         <div className="display-events__image-container">
           <div className="image">
-            <Tilt>
+            <Tilt gyroscope={true} glareEnable={true}>
               <img src={poster} alt="home" ref={posterRef} />
             </Tilt>
           </div>

@@ -1,4 +1,16 @@
-.gradient-background{
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, var(--pink), var(--orange));
+.gradient-background {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, var(--pink), var(--orange));
 }
-  
+
+.center-align {
+  margin: 15px 0px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
