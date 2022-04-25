@@ -153,7 +153,7 @@ const Events = () => {
             </Slider>
           </div>
         </div>
-      </div>{" "}
+      </div>
       <div className="super-rare">
         <div className="title-container">
           <h2 className="page--title">EVENTS</h2>

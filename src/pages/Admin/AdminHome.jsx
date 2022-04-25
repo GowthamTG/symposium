@@ -1,6 +1,6 @@
 import React from "react";
 import EventCard from "../../components/card/Card";
-
+import { Link } from "react-router-dom";
 import super1 from "../../assets/super1.png";
 import super2 from "../../assets/super2.png";
 import super3 from "../../assets/super3.png";
@@ -139,11 +139,14 @@ export default function AdminHome() {
           The list of events that are going to be hosted by CSE
         </p>
       </div>
+
       <div className="event__cards">
         <div className="container testimonial">
           <Slider {...settings}>
             {events.map((event) => (
+              // <Link to={`event/${event.id}`} style={{ textDecoration: "none" }}>
               <Card
+                id={event.id}
                 key={event.time}
                 image={event.image}
                 series={event.series}
@@ -151,7 +154,9 @@ export default function AdminHome() {
                 price={event.price}
                 tag={event.tag}
                 time={event.time}
+                style={{ textDecoration: "none" }}
               />
+              // </Link>
             ))}
           </Slider>
         </div>

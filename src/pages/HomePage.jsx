@@ -95,7 +95,7 @@ function HomePage() {
       <Navbar changeTheme={changeTheme} currentTheme={theme} />
       <Home />
       <Free />
-      <Clients />
+      {/* <Clients /> */}
       <SuperRare />
       <Release />
       <Like />

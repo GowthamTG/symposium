@@ -1,4 +1,6 @@
 import React, { useState, useContext } from "react";
+import { createStyles, makeStyles } from "@material-ui/core/styles";
+import Box from "@mui/material/Box";
 
 import "./AdminEvent.scss";
 import { themeContext } from "../../Context";
@@ -7,22 +9,18 @@ import { DataGrid } from "@mui/x-data-grid";
 import { useParams } from "react-router-dom";
 
 export default function AdminHome() {
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
-
-  let { id } = useParams();
-
   const userColumns = [
     {
       field: "id",
       headerName: "ID",
       width: 70,
       headerAlign: "center",
+
       renderCell: (cellValues) => {
         return (
           <div
+            className="description"
             style={{
-              color: darkMode ? "white" : "black",
               width: "100%",
               textAlign: "center",
             }}
@@ -40,8 +38,8 @@ export default function AdminHome() {
       renderCell: (cellValues) => {
         return (
           <div
+            className="description"
             style={{
-              color: darkMode ? "white" : "black",
               width: "100%",
               textAlign: "center",
             }}
@@ -59,8 +57,8 @@ export default function AdminHome() {
       renderCell: (cellValues) => {
         return (
           <div
+            className="description"
             style={{
-              color: darkMode ? "white" : "black",
               width: "100%",
               textAlign: "center",
             }}
@@ -78,8 +76,8 @@ export default function AdminHome() {
       renderCell: (cellValues) => {
         return (
           <div
+            className="description"
             style={{
-              color: darkMode ? "white" : "black",
               width: "100%",
               textAlign: "center",
             }}
@@ -97,8 +95,8 @@ export default function AdminHome() {
       renderCell: (cellValues) => {
         return (
           <div
+            className="description"
             style={{
-              color: darkMode ? "white" : "black",
               width: "100%",
               textAlign: "center",
             }}
@@ -116,8 +114,8 @@ export default function AdminHome() {
       renderCell: (cellValues) => {
         return (
           <div
+            className="description"
             style={{
-              color: darkMode ? "white" : "black",
               width: "100%",
               textAlign: "center",
             }}
@@ -167,24 +165,29 @@ export default function AdminHome() {
   const [eventName, seteventName] = useState("EventName");
   const [data, setData] = useState(dummyData);
 
+  const datagridSx = {
+    boxShadow: 2,
+    border: 2,
+    color: "white",
+    borderColor: "rgb(241, 196, 15)",
+    "& .MuiDataGrid-columnHeaders": {
+      color: "rgb(241, 196, 15)",
+      fontSize: 16,
+    },
+  };
+
   return (
-    <div className="datatable">
-      <div className="datatableTitle">{eventName}</div>
-      <DataGrid
-        className="datagrid"
-        rows={data}
-        columns={userColumns}
-        pageSize={9}
-        sx={{
-          boxShadow: 2,
-          border: 2,
-          borderColor: "rgb(241, 196, 15)",
-          "& .MuiDataGrid-columnHeaders": {
-            color: "rgb(241, 196, 15)",
-            fontSize: 16,
-          },
-        }}
-      />
+    <div className="center-align">
+      <div className="datatable">
+        <div className="description name">{eventName}</div>
+
+        <DataGrid
+          rows={data}
+          columns={userColumns}
+          pageSize={9}
+          sx={datagridSx}
+        />
+      </div>
     </div>
   );
 }

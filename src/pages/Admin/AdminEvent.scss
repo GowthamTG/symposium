@@ -1,3 +1,12 @@
+.center-align {
+  height: 85.4vh;
+  font-size: 24px;
+  margin: 15px 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .datatable {
   height: 580px;
   padding: 20px;
@@ -6,10 +15,17 @@
   .datatableTitle {
     width: 100%;
     font-size: 28px;
-    color: white;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+}
+
+.description {
+  color: gray !important;
+}
+
+.name {
+  font-size: 20px;
 }
