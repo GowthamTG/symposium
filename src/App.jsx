@@ -17,6 +17,7 @@ import Events from "./pages/Events";
 import AdminHome from "./pages/Admin/AdminHome";
 import AdminEvent from "./pages/Admin/AdminEvent";
 import EventsDetails from "./pages/EventsDetails/EventsDetails";
+import EventRegistrationForm from "./components/forms/EventRegistrationForm";
 
 function App() {
   return (
@@ -31,6 +32,10 @@ function App() {
           <Route path="/events/:id" element={<EventsDetails />}></Route>
           <Route path="/admin" element={<AdminHome />}></Route>
           <Route path="/admin/event/:id" element={<AdminEvent />}></Route>
+          <Route
+            path="/event-registration"
+            element={<EventRegistrationForm />}
+          ></Route>
         </Routes>
       </Layout>
     </BrowserRouter>

@@ -102,7 +102,7 @@ const LayerTwo = styled.div`
   display: flex;
   grid-area: top / start / 8 / end;
   flex-grow: 1;
-  box-shadow: inset 0 0 0 2px #e3e8ee;
+  // box-shadow: inset 0 0 0 2px #e3e8ee;
   flex-grow: 1;
 `;
 
