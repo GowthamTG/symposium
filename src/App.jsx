@@ -16,6 +16,7 @@ import PageTwo from "./pages/PageTwo";
 import Events from "./pages/Events";
 import AdminHome from "./pages/Admin/AdminHome";
 import AdminEvent from "./pages/Admin/AdminEvent";
+import EventRegistrationPage from "./pages/EventRegistrationPage";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/events" element={<Events />}></Route>
           <Route path="/admin" element={<AdminHome />}></Route>
           <Route path="/admin/event/:id" element={<AdminEvent />}></Route>
+          <Route path="/event-registration" element={<EventRegistrationPage/>} ></Route>
         </Routes>
       </Layout>
     </BrowserRouter>

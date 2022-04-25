@@ -1,0 +1,4 @@
+.gradient-background{
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, var(--pink), var(--orange));
+}
+  
