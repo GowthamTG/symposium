@@ -2,6 +2,12 @@
   background-color: var(--card-color);
   width: max-content;
   border-radius: 1rem;
+  transition: all;
+  transition-duration: 0.3s;
+  margin: 2rem !important;
+  &:hover {
+    transform: scale(1.1);
+  }
   &-image {
     img {
     }
@@ -57,6 +63,42 @@
       margin: 0.2rem auto;
     }
     &__button {
+    }
+  }
+  &--container {
+    display: flex;
+  }
+}
+
+.page--title {
+  background: 50% 100% / 50% 50% no-repeat
+    radial-gradient(
+      ellipse at bottom,
+      rgb(241, 196, 15),
+      transparent,
+      transparent
+    );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 4rem;
+  margin-top: 4rem;
+
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+    glow 2500ms linear infinite 2000ms;
+  display: block;
+
+  @keyframes reveal {
+    80% {
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px rgb(241, 196, 15);
     }
   }
 }
