@@ -41,9 +41,9 @@ export default function Navbar({ changeTheme, currentTheme }) {
           <li>
             <Link to="events">Events | Workshops</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="auth">Sign Up</Link>
-          </li>
+          </li> */}
           <li onClick={changeTheme}>
             {currentTheme === "dark" ? (
               <ImSun className="light" />

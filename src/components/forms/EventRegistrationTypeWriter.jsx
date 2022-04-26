@@ -1,7 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
-const EventRegistrationTypeWriter = () => {
+const EventRegistrationTypeWriter = (props) => {
   return (
     <Typewriter
       options={{
@@ -13,10 +13,7 @@ const EventRegistrationTypeWriter = () => {
           .typeString("Event Registration Form !")
           .pauseFor(2000)
           .deleteAll()
-          .typeString("CSE Department")
-          .pauseFor(2000)
-          .deleteAll()
-          .typeString("Threads 2022 ")
+          .typeString("Event Name")
           .pauseFor(2000)
           .deleteAll()
           .start();
