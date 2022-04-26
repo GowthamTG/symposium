@@ -524,9 +524,11 @@ input {
 
 .card-3 .card-heading {
   /* background: url("../images/bg-heading-03.jpg") top left/cover no-repeat; */
-  background-color: red;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: rgb(241, 196, 15) !important;
   display: table-cell;
-  width: 50%;
+  width: 45%;
 }
 
 .card-3 .card-body {
@@ -542,7 +544,7 @@ input {
   .card-3 .card-heading {
     display: block;
     width: 100%;
-    padding-top: 400px;
+
     background-position: center center;
   }
   .card-3 .card-body {

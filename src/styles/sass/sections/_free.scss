@@ -45,6 +45,9 @@
         font-size: 2rem;
       }
       .description {
+        &--points {
+          color: black;
+        }
       }
     }
   }

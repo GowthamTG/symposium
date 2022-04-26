@@ -183,18 +183,19 @@ const EventRegistrationForm = (props) => {
 
   return (
     <div className="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
-      <div className="wrapper wrapper--w780">
+      <div className="wrapper wrapper--w960">
         <div className="card card-3">
           <div
             className="card-heading"
             style={{
+              backgroundSize: "cover",
               background:
                 'url("https://www.adobe.com/express/create/media_124e910d2174e5390ecd2ab60cc6200784e25282b.jpeg?width=400&format=jpeg&optimize=medium")',
               backgroundRepeat: "no-repeat",
             }}
           ></div>
           <div className="card-body">
-            <h2 className="description">
+            <h2 className="description card-heading">
               <EventRegistrationTypeWriter />
             </h2>
             <form onSubmit={submitHandler}>

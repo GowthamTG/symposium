@@ -6,23 +6,35 @@ import release2 from "../../assets/release2.png";
 import Card from "./Card";
 
 export default function Release() {
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
   return (
     <div className="releases">
       <div className="release orange">
         <div className="content">
-          <h2 className="title">Initial Release 4/11</h2>
+          <h2 className="title">About Us</h2>
           <p className="description">
-            We have released four limited edition NFTs early which can be bid on
-            via <Link to="/">OpenSea</Link>
+            The aim of symposium is to offer an authentic experience just like a
+            teaching and learning event.
           </p>
           <p className="description">
-            There will be the only four of these NFTs we ever make, so be sure
-            not to miss out!
+            I) Symposium provides a lot of benefits to the students and some are
+            mentioned below. The benefits for students are
           </p>
-          <p className="description">50% of proceeds go to charity.</p>
-          <Link to="/" className="link">
+          <p className="description">Increased confidence</p>
+          <p className="description">
+            II) Appreciation of the importance of telling the story of their
+            research.
+          </p>
+          <p className="description">
+            III) Understanding of the relevance of their own work in relation to
+            others the chance to see their peers present and to
+          </p>
+          {/* <Link to="/" className="link">
             Check them out <BsArrowRight />
-          </Link>
+          </Link> */}
         </div>
         <div className="image">
           <img src={release1} alt="release" />
@@ -42,19 +54,26 @@ export default function Release() {
           <div className="ellipse orange"></div>
         </div>
         <div className="content">
-          <h2 className="title">Initial Release 4/11</h2>
+          <h2 className="title">Department of CSE</h2>
           <p className="description">
-            We have released four limited edition NFTs early which can be bid on
-            via <Link to="#">OpenSea</Link>
+            Plays a major role in Preparing our students for lifelong personal
+            and professional development and that enable them to exercise
+            leadership and make lasting contributions in their disciplines.
           </p>
           <p className="description">
-            There will be the only four of these NFTs we ever make, so be sure
-            not to miss out!
+            Our dept always Provide the educational resources to keep pace with
+            developments in the field.
           </p>
-          <p className="description">50% of proceeds go to charity.</p>
-          <Link to="#" className="link">
-            Check them out <BsArrowRight />
-          </Link>
+          <p className="description">
+            Or department also provide enough support To initiate the
+            development of e-Services for Social Welfare Activities.
+          </p>
+          <div
+            onClick={() => openInNewTab("https://www.sonatech.ac.in/cse/")}
+            className="link"
+          >
+            Check us out <BsArrowRight />
+          </div>
         </div>
       </div>
     </div>

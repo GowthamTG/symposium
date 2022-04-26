@@ -13,12 +13,20 @@ export default function Free() {
           <div className="ellipse green"></div>
         </div>
         <div className="content">
-          <div className="image">
-            <img src={icon} alt="icon" />
-          </div>
-          <h2 className="title">Free NFT for early birds</h2>
+          <div className="image">{/* <img src={icon} alt="icon" /> */}</div>
+          <h2 className="title"> Event for All</h2>
           <p className="description">
-            Sign up today and you'll get a free NFT when we launch
+            Register today and get ready for excitement, enjoyment and
+            enthusiasm.
+          </p>
+          <p className="description--points">
+            <b>Excitement</b>
+          </p>
+          <p className="description--points">
+            <b>Enjoyment</b>
+          </p>
+          <p className="description--points">
+            <b>Enthusiasm</b>
           </p>
         </div>
       </div>
