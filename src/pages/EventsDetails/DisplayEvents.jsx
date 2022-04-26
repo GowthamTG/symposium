@@ -52,9 +52,17 @@ const DisplayEvents = ({ eve }) => {
         </div>
         <div className="display-events__content" ref={descRef}>
           <h1 className="title">{eve.title}</h1>
+          <div className="display-events__box">
+            <div className="display-events__title">
+              <span className="display-events__block"></span>
+              <h1 className="display-events__h1">
+                {eve.tech}<span className="display-events__span"></span>
+              </h1>
+            </div>
+          </div>
           <p className="description">{eve.desc}</p>
-          <p className="hall">Hall no: {eve.Hall}</p>
-          <p className="hall">Timing: {eve.timing}</p>
+          <p className="hall">Hall no: <span className="hall--span">{eve.Hall}</span></p>
+          <p className="hall">Date & Timing: <span className="hall--span">{eve.date}, {eve.timing}</span></p>
           <div>
             <p className="hall">Organizers:</p>
             <div className="org-list">
@@ -63,7 +71,7 @@ const DisplayEvents = ({ eve }) => {
               ))}
             </div>
           </div>
-          <button>Register Now</button>
+          <button className="display-events__button">Register Now</button>
         </div>
       </div>
     </div>

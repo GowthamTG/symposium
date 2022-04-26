@@ -1,15 +1,13 @@
 import React from "react";
 import EventCard from "../components/card/Card";
 
-import LeftArrow from "../assets/left-arrow.svg";
-import RightArrow from "../assets/right-arrow.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import super1 from "../assets/super1.png";
 import super2 from "../assets/super2.png";
 import super3 from "../assets/super3.png";
 import super4 from "../assets/super4.png";
-import { Link } from "react-router-dom";
+
 import Slider from "react-slick";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
@@ -130,10 +128,10 @@ const Events = () => {
     <>
       <div className="super-rare">
         <div className="title-container">
-          <h2 className="page--title">EVENTS</h2>
-          <p className="description">
+          <h2 className="page--title">Workshops</h2>
+          {/* <p className="description">
             The list of events that are going to be hosted by CSE
-          </p>
+          </p> */}
         </div>
         <div className="event__cards">
           <div className="container testimonial">
@@ -156,10 +154,10 @@ const Events = () => {
       </div>
       <div className="super-rare">
         <div className="title-container">
-          <h2 className="page--title">EVENTS</h2>
-          <p className="description">
+          <h2 className="page--title">Events</h2>
+          {/* <p className="description">
             The list of events that are going to be hosted by CSE
-          </p>
+          </p> */}
         </div>
         <div className="event__cards">
           <div className="container testimonial">

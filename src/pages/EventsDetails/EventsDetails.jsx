@@ -16,6 +16,8 @@ const EventsDetails = () => {
       Hall: "200",
       posterImg: "../../assets/img.jpeg",
       timing: "1 pm",
+      date: "05/05/2022",
+      tech: "Technical Event"
     },
     {
       id: 2,
@@ -29,6 +31,8 @@ const EventsDetails = () => {
       Hall: "200",
       posterImg: "../../assets/img.jpeg",
       timing: "1 pm",
+      date: "05/05/2022",
+      tech: "Technical Event"
     },
     {
       id: 3,
@@ -42,6 +46,8 @@ const EventsDetails = () => {
       Hall: "200",
       posterImg: "../../assets/img.jpeg",
       timing: "1 pm",
+      date: "05/05/2022",
+      tech: "Technical Event"
     },
     {
       id: 4,
@@ -55,6 +61,8 @@ const EventsDetails = () => {
       Hall: "200",
       posterImg: "../../assets/img.jpeg",
       timing: "1 pm",
+      date: "05/05/2022",
+      tech: "Technical Event"
     },
     {
       id: 5,
@@ -68,6 +76,8 @@ const EventsDetails = () => {
       Hall: "200",
       posterImg: "../../assets/img.jpeg",
       timing: "1 pm",
+      date: "05/05/2022",
+      tech: "Technical Event"
     },
     {
       id: 6,
@@ -81,6 +91,8 @@ const EventsDetails = () => {
       Hall: "200",
       posterImg: "../../assets/img.jpeg",
       timing: "1 pm",
+      date: "05/05/2022",
+      tech: "Technical Event"
     },
   ];
 
