@@ -80,9 +80,9 @@ const Events = () => {
         <div className="event__cards">
           <div className="container testimonial">
             <Slider {...settings}>
-              {events.map((event) => (
+              {events.slice(10, 14).map((event) => (
                 <EventCard
-                  key={event.time}
+                  key={event.id}
                   id={event.id}
                   posterImg={event.cardLogo}
                   title={event.title}

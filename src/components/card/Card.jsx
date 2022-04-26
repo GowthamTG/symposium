@@ -4,24 +4,37 @@ import { Link } from "react-router-dom";
 import classes from "./card.module.scss";
 
 export default function Card({ id, posterImg, title, desc, tech }) {
+  var titleArr = [];
+  if (id === 11 || id === 12 || id === 13) {
+    console.log("Cards 11 12");
+    titleArr = title.split(" ");
+  } else {
+    titleArr.push(title);
+  }
+
   console.log(posterImg);
   return (
     <div className="event__card">
       <div className="event__card-image">
-        <img src={require("../../assets/super1.png")} alt="super1" />
+        <img
+          src={require(`../../assets/cards/event${4}card.png`)}
+          alt="super1"
+        />
       </div>
       <div className="event__card-content">
         <div className="event__card-heading">
           {/* <span className="event__card-series">{series}</span> */}
+
           <div className={classes.box}>
-            <div className={classes.title}>
-              <span className={classes.block}></span>
-              <h1>
-                {title}
-                <span></span>
-              </h1>
-            </div>
+            {titleArr.map((title) => (
+              <div className={classes.title}>
+                <>
+                  <span className={classes.block}> </span> <h1>{title}</h1>
+                </>
+              </div>
+            ))}
           </div>
+
           {/* <span className="event__card-top">Top bid</span> */}
         </div>
         <div className="event__card-details">

@@ -19,11 +19,11 @@ import AdminEvent from "./pages/Admin/AdminEvent";
 import EventRegistrationPage from "./pages/EventRegistrationPage";
 import EventsDetails from "./pages/EventsDetails/EventsDetails";
 import EventRegistrationForm from "./components/forms/EventRegistrationForm";
-import { EventsProvider } from "./EventsContext";
+import { EventsProvider } from './EventsContext'
 
 function App() {
   return (
-    <EventsProvider>
+    <EventsProvider >
       <BrowserRouter>
         <Layout>
           <Routes>
@@ -36,7 +36,7 @@ function App() {
             <Route path="/admin" element={<AdminHome />}></Route>
             <Route path="/admin/event/:id" element={<AdminEvent />}></Route>
             <Route
-              path="/event-registration"
+              path="/registration/:id"
               element={<EventRegistrationForm />}
             ></Route>
           </Routes>

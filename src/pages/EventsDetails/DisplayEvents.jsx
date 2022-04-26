@@ -3,6 +3,7 @@ import poster from "../../assets/poster.jpeg";
 import Tilt from "react-parallax-tilt";
 import { gsap } from "gsap";
 import "./eventsDetails.scss";
+import { Link } from "react-router-dom";
 
 const DisplayEvents = ({ eve }) => {
   const descRef = useRef(null);
@@ -115,7 +116,9 @@ const DisplayEvents = ({ eve }) => {
               <p className="description">{org}</p>
             ))}
           </div>
-          <button className="display-events__button">Register Now</button>
+          <Link to={`/registration/${eve.id}`}>
+            <button className="display-events__button">Register Now</button>
+          </Link>
         </div>
       </div>
     </div>
