@@ -139,6 +139,41 @@ export const EventsProvider = (props) => {
         "This event is based on writing programs and code snippets for the given question. The participants are expected to code for the given scenario to get the required output.",
     },
     {
+      id: 5,
+      title: "DATA FLOW",
+      desc: "This event is based on writing queries in Structures Query Language (SQL). Simple scenarios will be provided as questions for which the participants are expected to write the queries such that it fetches the required output.",
+      criteria:
+        "Judgement is precisely based on the rank of scores obtained by the participants.",
+      staff: ["Dr.V.Nandhini", "Dr.K.C.Rajeshwari"],
+      coordinators: [
+        "Ms.Indhirajothi S-9087060772",
+        "Ms.Indhumathi C-8072400962",
+      ],
+      organiser: [
+        "Ms.Priyadharshini ",
+        "Ms.Preethisri S.S",
+        "Ms.Mahapreetha",
+        "Ms.Nishalini",
+      ],
+      rules: [
+        "1. Single member event. Therefore, team participation is not encouraged.",
+        "2. Mobile phones and similar gadgets are strictly prohibited.",
+        "3. No discussion among the participants during the event.",
+      ],
+      rounds: [
+        "The first round consists of multiple-choice questions from SQL.",
+        "The second round is based on writing SQL queries.",
+      ],
+      Hall: "200",
+      posterImg: "../../assets/img.jpeg",
+      timing: "1 pm",
+      date: "05/05/2022",
+      tech: "Technical Event",
+      cardLogo: "../../assets/super1.png",
+      cardDesc:
+        "This event is based on writing queries in Structures Query Language (SQL). Simple scenarios will be provided as questions for which the participants are expected to write the queries such that it fetches the required output.",
+    },
+    {
       id: 6,
       title: "MEME CREATION",
       desc: "This event is based on creating memes. A topic will be provided on spot for which the participants are expected to create ingenious memes.",
