@@ -48,8 +48,8 @@ export const EventsProvider = (props) => {
     },
     {
       id: 3,
-      title: "Event 3",
-      desc: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+      title: "Webster",
+      desc: "This event is based on developing a web page for the given scenario. Simple web pages are to be developed using HTML, CSS, etc., as per the requirement given.",
       organiser: [
         "Lorem - 9876543210",
         "Lorem - 9876543210",
@@ -66,8 +66,8 @@ export const EventsProvider = (props) => {
     },
     {
       id: 4,
-      title: "Event 4",
-      desc: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.',
+      title: "BIG O OF ONE-0(1)",
+      desc: "This event is based on writing programs and code snippets for the given question. The participants are expected to code for the given scenario to get the required output.",
       organiser: [
         "Lorem - 9876543210",
         "Lorem - 9876543210",
@@ -84,8 +84,8 @@ export const EventsProvider = (props) => {
     },
     {
       id: 5,
-      title: "Event 5",
-      desc: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.',
+      title: "DATA FLOW",
+      desc: "This event is based on writing queries in Structures Query Language (SQL). Simple scenarios will be provided as questions for which the participants are expected to write the queries such that it fetches the required output.",
       organiser: [
         "Lorem - 9876543210",
         "Lorem - 9876543210",
@@ -102,6 +102,206 @@ export const EventsProvider = (props) => {
     },
     {
       id: 6,
+      title: "MEME CREATION",
+      desc: "This event is based on creating memes. A topic will be provided on spot for which the participants are expected to create ingenious memes.",
+      rules: [
+        "1. Mobile phones can be used. ",
+        "2. Meme shouldn't be offensive or related to politics and religions.",
+        "3. Plagiarism is strictly prohibited.",
+        "4. No discussion among the participants during the event.",
+      ],
+      rounds: [
+        "The first round is based on image meme",
+        "The second round is based on video meme",
+      ],
+      criteria:
+        "Judgement is precisely based on the creativity applied by the participants.",
+      staff: ["Dr.S.sakthivel"],
+
+      coordinators: [
+        "Mr.Madhan RI - 7010767487",
+        "Mr.Parthasarathy S-8870865343",
+      ],
+      organiser: [
+        "Mr.Kavin Raj M",
+        "Mr.Santhosh L",
+        "Mr.Mathan Kumar M",
+        "Mr.Prasanna Perumal P",
+      ],
+
+      Hall: "200",
+      posterImg: "../../assets/img.jpeg",
+      timing: "1 pm",
+      date: "06/05/2022",
+      tech: "Non Technical Event",
+      cardLogo: "../../assets/super1.png",
+      cardDesc:
+        "Judgement is precisely based on the creativity applied by the participants.",
+    },
+    {
+      id: 7,
+      title: "SNAP SHOT",
+      desc: "A photograph is not only an image, an interpretation of the reality; it is also a trace, something directly stenciled off the real, like a footprint or a death mask. So this event is all about showcasing the creative and innovative skills on photography.",
+      rules: [
+        "1. Any Device with Camera is allowed. ",
+        "2. Photo must be taken within the College campus based on the given topics.",
+        "3. Minor Editing are allowed, if it is beyond that then it will be disqualified.",
+      ],
+      rounds: [],
+      criteria:
+        "Judgement is precisely based on the effort and the creativity applied on the photograph",
+      staff: ["Dr.S.Sankar", "Prof.M.R.Sundar Kumar"],
+
+      coordinators: [
+        "Mr.Yogesh Kumar J K - 9791927277",
+        "Ms.Sona R - 6380739006",
+      ],
+      organiser: [
+        "Ms.Jaisree V",
+        "Ms.Deepika M",
+        "Ms.Gayathri M.L",
+        "Ms.Jayapradaa G",
+      ],
+      Hall: "200",
+      posterImg: "../../assets/img.jpeg",
+      timing: "1 pm",
+      date: "06/05/2022",
+      tech: "Non Technical Event",
+      cardLogo: "../../assets/super1.png",
+      cardDesc:
+        "Judgement is precisely based on the creativity applied by the participants.",
+    },
+    {
+      id: 8,
+      title: "COLORFUL VISION",
+      desc: "Art is a vision on paper not to reproduce reality but to create a reality of same intensity. This event is based on pencil sketch and painting.",
+      rules: [
+        "1. Mobile phones can be used. ",
+        "2. Malpractice is strictly prohibited. ",
+        "3. No discussion during the event.",
+      ],
+      rounds: [
+        "First round is based on pencil sketches on a given topic, no colors allowed.",
+        "Second round will be painting on a given topic.",
+      ],
+      criteria:
+        "Judgement is precisely based on the creativity applied by the participants.",
+      staff: ["Dr.G.Kirubashri", "Prof.G.Vidhya"],
+      coordinators: [
+        "Ms.Priyadharashini P - 7708666522",
+        "Ms.Madhu Harshini V H - 6379555234",
+      ],
+      organiser: [
+        "Ms.Guru Lakshmi S",
+        "Ms.Dhivya Bharathi P",
+        "Ms.Ramya R",
+        "Ms.Sindhu B",
+      ],
+      Hall: "200",
+      posterImg: "../../assets/img.jpeg",
+      timing: "1 pm",
+      date: "06/05/2022",
+      tech: "Non Technical Event",
+      cardLogo: "../../assets/super1.png",
+      cardDesc:
+        "Art is a vision on paper not to reproduce reality but to create a reality of same...",
+    },
+    {
+      id: 9,
+      title: "FILMY WAR",
+      desc: "A short film is an audiovisual production that is mainly characterized by its short duration and deals with innovative issues and concept oriented.",
+      rules: [
+        "1.Any Device with Camera is allowed ",
+        "2. The short film can be based on any open topic. ",
+        "3. Duration must be within 10-15 minutes.",
+      ],
+      rounds: [],
+      criteria:
+        "Judgement is precisely based on the effort and the creativity applied on the film making.Judgement will be provided in a single round.",
+      staff: ["Dr.R.C.Narayanan", "Prof.D.Vidhyabharathi"],
+      coordinators: [
+        "Mr.Jeeva K-8608781628 - 7708666522",
+        "Mr.Santhosh - 7094571688",
+      ],
+      organiser: ["Mr.Chiranjith Raghawa S", "Mr. Mohamed Niyas R"],
+      Hall: "200",
+      posterImg: "../../assets/img.jpeg",
+      timing: "1 pm",
+      date: "06/05/2022",
+      tech: "Non Technical Event",
+      cardLogo: "../../assets/super1.png",
+      cardDesc:
+        "Judgement is precisely based on the creativity applied by the participants.",
+    },
+    {
+      id: 10,
+      title: "MIND FIZZ",
+      desc: "A quiz is conducted to test the knowledge and cognitive skills of the participants.",
+      rules: [
+        "1. Mobile phones are not allowed ",
+        "2. Malpractice is strictly prohibited.",
+      ],
+      rounds: [
+        "First round will be based on multiple choice",
+        "Second round will be solving puzzles. Coordinate Details",
+      ],
+      criteria:
+        "Judgement is precisely based on the rank of scores obtained by the participants.",
+      staff: ["Dr.J.Jayanthi", "Dr.S.Anitha Elavarasi"],
+      coordinators: ["Ms.Nisha M - 7010489831", "Ms.Pavithra M - 9047616100"],
+      organiser: [
+        "Mr.Kesavan R",
+        "Mr.Mohammed Jameer K",
+        "Mr.Prasanth G",
+        "Mr.Prabhu M",
+      ],
+      Hall: "200",
+      posterImg: "../../assets/img.jpeg",
+      timing: "1 pm",
+      date: "06/05/2022",
+      tech: "Non Technical Event",
+      cardLogo: "../../assets/super1.png",
+      cardDesc:
+        "Judgement is precisely based on the rank of scores obtained by the participants.",
+    },
+    {
+      id: 11,
+      title: "Event 6",
+      desc: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.',
+      organiser: [
+        "Lorem - 9876543210",
+        "Lorem - 9876543210",
+        "Lorem - 9876543210",
+      ],
+      Hall: "200",
+      posterImg: "../../assets/img.jpeg",
+      timing: "1 pm",
+      date: "05/05/2022",
+      tech: "Technical Event",
+      cardLogo: "../../assets/super1.png",
+      cardDesc:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis inventore optio itaque ullam excepturi reprehenderit sequi quidem volupta",
+    },
+    {
+      id: 12,
+      title: "Event 6",
+      desc: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.',
+      organiser: [
+        "Lorem - 9876543210",
+        "Lorem - 9876543210",
+        "Lorem - 9876543210",
+      ],
+      Hall: "200",
+      posterImg: "../../assets/img.jpeg",
+      timing: "1 pm",
+      date: "05/05/2022",
+      tech: "Technical Event",
+      cardLogo: "../../assets/super1.png",
+      cardDesc:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis inventore optio itaque ullam excepturi reprehenderit sequi quidem volupta",
+    },
+    {
+      id: 13,
       title: "Event 6",
       desc: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.',
       organiser: [
