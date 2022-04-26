@@ -1,74 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import EventCard from "../components/card/Card";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import super1 from "../assets/super1.png";
-import super2 from "../assets/super2.png";
-import super3 from "../assets/super3.png";
-import super4 from "../assets/super4.png";
+
+import { EventsContext } from "../EventsContext";
 
 import Slider from "react-slick";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-const Events = () => {
-  const events = [
-    {
-      id: 1,
-      image: super1,
-      series: "Gloop Series",
-      title: "Technical",
-      price: 2.99,
-      tag: 12983,
-      time: 1,
-    },
-    {
-      id: 2,
-      image: super2,
-      series: "Gloop Series",
-      title: "Non Technical",
-      price: 2.99,
-      tag: 12983,
-      time: 1,
-    },
-    {
-      id: 3,
-      image: super3,
-      series: "Gloop Series",
-      title: "Technical",
-      price: 2.99,
-      tag: 12983,
-      time: 1,
-    },
-    {
-      id: 4,
-      image: super4,
-      series: "Gloop Series",
-      title: "Non Technical",
-      price: 2.99,
-      tag: 12983,
-      time: 2,
-    },
-    {
-      id: 5,
-      image: super4,
-      series: "Gloop Series",
-      title: "Non Technical",
-      price: 2.99,
-      tag: 12983,
-      time: 3,
-    },
-    {
-      id: 6,
-      image: super4,
-      series: "Gloop Series",
-      title: "Non Technical",
-      price: 2.99,
-      tag: 12983,
-      time: 4,
-    },
-  ];
 
+const Events = () => {
+  const events = useContext(EventsContext);
+  console.log(events);
   const PreviousBtn = (props) => {
     console.log(props);
     const { className, onClick } = props;
@@ -140,12 +84,10 @@ const Events = () => {
                 <EventCard
                   key={event.time}
                   id={event.id}
-                  image={event.image}
-                  series={event.series}
+                  posterImg={event.posterImg}
                   title={event.title}
-                  price={event.price}
-                  tag={event.tag}
-                  time={event.time}
+                  desc={event.desc}
+                  tech={event.tech}
                 />
               ))}
             </Slider>

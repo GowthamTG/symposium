@@ -2,7 +2,7 @@ import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import release1 from "../../assets/release1.png";
-import release2 from "../../assets/release2.png";
+import release2 from "../../assets/College.png";
 import Card from "./Card";
 
 export default function Release() {
@@ -45,8 +45,8 @@ export default function Release() {
         <div className="event__card-container">
           <Card
             image={release2}
-            series="Gloop Series"
-            title="Purple Man"
+            series="SCT"
+            title="CSE"
             price={3.95}
             tag="1094"
             time={2}

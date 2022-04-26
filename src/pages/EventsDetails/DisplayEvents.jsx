@@ -56,13 +56,21 @@ const DisplayEvents = ({ eve }) => {
             <div className="display-events__title">
               <span className="display-events__block"></span>
               <h1 className="display-events__h1">
-                {eve.tech}<span className="display-events__span"></span>
+                {eve.tech}
+                <span className="display-events__span"></span>
               </h1>
             </div>
           </div>
           <p className="description">{eve.desc}</p>
-          <p className="hall">Hall no: <span className="hall--span">{eve.Hall}</span></p>
-          <p className="hall">Date & Timing: <span className="hall--span">{eve.date}, {eve.timing}</span></p>
+          <p className="hall">
+            Hall no: <span className="hall--span">{eve.Hall}</span>
+          </p>
+          <p className="hall">
+            Date & Timing:{" "}
+            <span className="hall--span">
+              {eve.date}, {eve.timing}
+            </span>
+          </p>
           <div>
             <p className="hall">Organizers:</p>
             <div className="org-list">
