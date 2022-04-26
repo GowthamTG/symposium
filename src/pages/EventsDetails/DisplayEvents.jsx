@@ -72,28 +72,48 @@ const DisplayEvents = ({ eve }) => {
             </span>
           </p>
           <div>
+            <p className="hall">Criteria:</p>
+            <p className="description">{eve.criteria}</p>
+          </div>
+          <div>
+            <p className="hall">Rules:</p>
+
+            {eve.rules.map((s, index) => (
+              <div className="description">{s}</div>
+            ))}
+          </div>
+          <div>
+            <p className="hall">Rounds:</p>
+
+            {eve.rounds.map((s, index) => (
+              <div className="description">
+                <b>Round {index + 1}</b> {s}
+              </div>
+            ))}
+          </div>
+          <div>
             <p className="hall">Staffs:</p>
             <div className="org-list">
-              {eve.organiser.map((org) => (
-                <p className="description">{org}</p>
+              {eve.staff.map((s) => (
+                <p className="description">
+                  <b>{s}</b>
+                </p>
               ))}
             </div>
           </div>
           <div>
-            <p className="hall">Organizers:</p>
-            <div className="org-list">
-              {eve.organiser.map((org) => (
-                <p className="description">{org}</p>
-              ))}
-            </div>
+            <p className="hall">Coordinators:</p>
+
+            {eve.coordinators.map((cor) => (
+              <p className="description">{cor}</p>
+            ))}
           </div>
           <div>
             <p className="hall">Organizers:</p>
-            <div className="org-list">
-              {eve.organiser.map((org) => (
-                <p className="description">{org}</p>
-              ))}
-            </div>
+
+            {eve.organiser.map((org) => (
+              <p className="description">{org}</p>
+            ))}
           </div>
           <button className="display-events__button">Register Now</button>
         </div>

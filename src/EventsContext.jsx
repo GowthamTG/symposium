@@ -8,33 +8,60 @@ export const EventsProvider = (props) => {
       id: 1,
       title: "PROJECT 360",
       desc: "Project 360 is a technical event in which the participants have to present the project ideas. Innovative project presentations and idea presentations are to be showcased with the help of ppt.",
+      coordinators: [
+        "Ms.Kunguma Swetha A - 8248264840",
+        "Ms.Lekha Dharashini - 8072788806",
+      ],
       organiser: [
-        "Lorem - 9876543210",
-        "Lorem - 9876543210",
-        "Lorem - 9876543210",
+        "Ms.Harini K.K ",
+        "Ms.Divya V.M",
+        "Ms.Iswarya K",
+        "Ms.Jayashree P",
       ],
       Hall: "200",
+      staff: ["Prof.D.Balamurugan ", "Prof.J.Dhayanidhi"],
       posterImg: "./assets/Ad Zap.png",
       timing: "NA",
       date: "6/05/2022",
       tech: "Technical Event",
       criteria:
         "Judgement is precisely based on the rank of scores obtained by the participants.",
-
+      rules: [
+        "1. Mobile phones can be used. ",
+        "2. Meme shouldn't be offensive or related to politics and religions.",
+        "3. Plagiarism is strictly prohibited.",
+        "4. No discussion among the participants during the event.",
+      ],
       cardLogo: "../../assets/super1.png",
       cardDesc:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis inventore optio itaque ullam excepturi reprehenderit sequi quidem volupta",
-      rounds: [""],
+        "Project 360 is a technical event in which the participants have to present the project ideas. Innovative project presentations and idea presentations are to be showcased with the help of ppt.",
+      rounds: [
+        "In the first-round participants are expected to present their ideas.",
+        "In the second-round participants expected to present their projects.",
+      ],
     },
     {
       id: 2,
       title: "HUNKY BRAINS",
       desc: "Hunky Brains is to check the participant's cognitive thinking skills aptitude, verbal and reasoning problems within a given time. The participants are required to solve the given simple questions that are related to general aptitude.",
-
+      criteria:
+        "Judgement is precisely based on the rank of scores obtained by the participants.",
+      staff: ["Prof.V.Vinodini", "Prof.R.Balaji "],
+      coordinators: ["Ms.Anusha S-9384543668", "Ms.Abinaya S-9600345871"],
       organiser: [
-        "Lorem - 9876543210",
-        "Lorem - 9876543210",
-        "Lorem - 9876543210",
+        "Mr.Karthikeya",
+        "Mr.Harish S",
+        "Mr.Gowtham N",
+        "Mr.Harish S.M",
+      ],
+      rules: [
+        "1. Single member event. Therefore, team participation is not encouraged.",
+        "2. Mobile phones and similar gadgets are strictly prohibited.",
+        "3. No discussion among the participants during the event.",
+      ],
+      rounds: [
+        "The first round consists of multiple-choice questions from quantitative aptitude, reasoning and verbal.",
+        "The second round consists on multiple-choice questions from quantitative advanced aptitude,concepts of reasoning and verbal.",
       ],
 
       Hall: "200",
@@ -44,34 +71,63 @@ export const EventsProvider = (props) => {
       tech: "Technical Event",
       cardLogo: "../../assets/super1.png",
       cardDesc:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis inventore optio itaque ullam excepturi reprehenderit sequi quidem volupta",
+        "Hunky Brains is to check the participant's cognitive thinking skills aptitude, verbal and reasoning problems within a given time. The participants are required to solve the given simple questions that are related to general aptitude.",
     },
     {
       id: 3,
       title: "Webster",
       desc: "This event is based on developing a web page for the given scenario. Simple web pages are to be developed using HTML, CSS, etc., as per the requirement given.",
-      organiser: [
-        "Lorem - 9876543210",
-        "Lorem - 9876543210",
-        "Lorem - 9876543210",
-      ],
       Hall: "200",
       posterImg: "../../assets/img.jpeg",
       timing: "1 pm",
       date: "05/05/2022",
       tech: "Technical Event",
       cardLogo: "../../assets/super1.png",
+      staff: ["Prof.M.Marimuthu", "Prof.G.Mohanraj"],
+      criteria:
+        "Judgement is precisely based on the rank of scores obtained by the participants.",
+      coordinators: [
+        "Mr.Praveen Raj S - 7538858580",
+        "Mr.Praveen Kumar M - 8245416861",
+      ],
+      organiser: [
+        "Mr.Kavin Raj M",
+        "Mr.Santhosh L",
+        "Mr.Mathan Kumar M",
+        "Mr.Prasanna Perumal P",
+      ],
+      rounds: [
+        "The first round consists of multiple-choice questions related to web development.",
+        "The second round is based on developing a web page.",
+      ],
       cardDesc:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis inventore optio itaque ullam excepturi reprehenderit sequi quidem volupta",
+        "This event is based on developing a web page for the given scenario. Simple web pages are to be developed using HTML, CSS, etc., as per the requirement given.",
     },
     {
       id: 4,
       title: "BIG O OF ONE-0(1)",
       desc: "This event is based on writing programs and code snippets for the given question. The participants are expected to code for the given scenario to get the required output.",
+      criteria:
+        "Judgement is precisely based on the rank of scores obtained by the participants.",
+      staff: ["Dr.R.Sivakami", "Dr.V.Sathiya Moorthi"],
+      coordinators: [
+        "Mr.A R Muhil Raj - 8072498381",
+        "Mr.S Kalaiyarasan-6379014934",
+      ],
       organiser: [
-        "Lorem - 9876543210",
-        "Lorem - 9876543210",
-        "Lorem - 9876543210",
+        "Mr.Shreinik Jain U",
+        "Mr.Senthil Sivaraman S",
+        "Mr.Vickramadhityaa R.K",
+        "Mr.Harshvardan S.M",
+      ],
+      rules: [
+        "1. Single member event. Therefore, team participation is not encouraged.",
+        "2. Mobile phones and similar gadgets are strictly prohibited.",
+        "3. No discussion among the participants during the event.",
+      ],
+      rounds: [
+        "The first round consists of multiple-choice questions related to coding.",
+        "The second round is based on writing codes for given questions.",
       ],
       Hall: "200",
       posterImg: "../../assets/img.jpeg",
@@ -80,25 +136,7 @@ export const EventsProvider = (props) => {
       tech: "Technical Event",
       cardLogo: "../../assets/super1.png",
       cardDesc:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis inventore optio itaque ullam excepturi reprehenderit sequi quidem volupta",
-    },
-    {
-      id: 5,
-      title: "DATA FLOW",
-      desc: "This event is based on writing queries in Structures Query Language (SQL). Simple scenarios will be provided as questions for which the participants are expected to write the queries such that it fetches the required output.",
-      organiser: [
-        "Lorem - 9876543210",
-        "Lorem - 9876543210",
-        "Lorem - 9876543210",
-      ],
-      Hall: "200",
-      posterImg: "../../assets/img.jpeg",
-      timing: "1 pm",
-      date: "05/05/2022",
-      tech: "Technical Event",
-      cardLogo: "../../assets/super1.png",
-      cardDesc:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis inventore optio itaque ullam excepturi reprehenderit sequi quidem volupta",
+        "This event is based on writing programs and code snippets for the given question. The participants are expected to code for the given scenario to get the required output.",
     },
     {
       id: 6,
@@ -116,11 +154,11 @@ export const EventsProvider = (props) => {
       ],
       criteria:
         "Judgement is precisely based on the creativity applied by the participants.",
-      staff: ["Dr.S.sakthivel"],
+      staff: ["Dr.S.Sakthivel"],
 
       coordinators: [
         "Mr.Madhan RI - 7010767487",
-        "Mr.Parthasarathy S-8870865343",
+        "Mr.Parthasarathy S - 8870865343",
       ],
       organiser: [
         "Mr.Kavin Raj M",
