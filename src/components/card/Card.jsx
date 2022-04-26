@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 import classes from "./card.module.scss";
 
 export default function Card({ id, posterImg, title, desc, tech }) {
+  console.log(posterImg);
   return (
     <div className="event__card">
       <div className="event__card-image">
-        <img src={posterImg} alt="super1" />
+        <img src={require("../../assets/super1.png")} alt="super1" />
       </div>
       <div className="event__card-content">
         <div className="event__card-heading">

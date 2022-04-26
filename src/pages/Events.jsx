@@ -84,9 +84,9 @@ const Events = () => {
                 <EventCard
                   key={event.time}
                   id={event.id}
-                  posterImg={event.posterImg}
+                  posterImg={event.cardLogo}
                   title={event.title}
-                  desc={event.desc}
+                  desc={event.cardDesc}
                   tech={event.tech}
                 />
               ))}
@@ -107,12 +107,11 @@ const Events = () => {
               {events.map((event) => (
                 <EventCard
                   key={event.time}
-                  image={event.image}
-                  series={event.series}
+                  id={event.id}
+                  posterImg={event.cardLogo}
                   title={event.title}
-                  price={event.price}
-                  tag={event.tag}
-                  time={event.time}
+                  desc={event.cardDesc}
+                  tech={event.tech}
                 />
               ))}
             </Slider>
