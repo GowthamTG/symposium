@@ -102,6 +102,7 @@
       height: inherit;
       background: #ffb510;
       position: absolute;
+
       animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
       display: flex;
     }
@@ -109,7 +110,7 @@
     h1 {
       font-family: "Poppins";
 
-      font-size: 32px;
+      font-size: 28px;
       -webkit-animation: mainFadeIn 2s forwards;
       -o-animation: mainFadeIn 2s forwards;
       animation: mainFadeIn 2s forwards;

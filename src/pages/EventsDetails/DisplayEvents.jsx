@@ -72,6 +72,22 @@ const DisplayEvents = ({ eve }) => {
             </span>
           </p>
           <div>
+            <p className="hall">Staffs:</p>
+            <div className="org-list">
+              {eve.organiser.map((org) => (
+                <p className="description">{org}</p>
+              ))}
+            </div>
+          </div>
+          <div>
+            <p className="hall">Organizers:</p>
+            <div className="org-list">
+              {eve.organiser.map((org) => (
+                <p className="description">{org}</p>
+              ))}
+            </div>
+          </div>
+          <div>
             <p className="hall">Organizers:</p>
             <div className="org-list">
               {eve.organiser.map((org) => (
