@@ -4,9 +4,9 @@ nav {
   align-items: center;
   .brand-container {
     .brand {
-      img {
-        height: 100%;
-      }
+      font-size: 35px;
+      color: var(--accent-color3);
+      font-weight: bolder;
     }
     .toggle-container {
       display: none;

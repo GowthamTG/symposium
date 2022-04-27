@@ -8,18 +8,24 @@ export default function Free() {
   return (
     <div className="free">
       <div className="container">
-        <div className="background">
+        {/* <div className="background">
           <div className="ellipse pink"></div>
           <div className="ellipse green"></div>
-        </div>
+        </div> */}
         <div className="content">
           <div className="image">{/* <img src={icon} alt="icon" /> */}</div>
-          <h2 className="title"> Event for All</h2>
+          <h2 className="title"> About </h2>
           <p className="description">
-            Register today and get ready for excitement, enjoyment and
-            enthusiasm.
+            The aim of symposium is to offer an authentic experience just like a
+            teaching and learning event.Symposium provides a lot of benefits to
+            the students and some are mentioned below. The benefits for students
+            are, Increased confidence Appreciation of the importance of telling
+            the story of their research. Understanding of the relevance of their
+            own work in relation to others the chance to see their peers present
+            and to reflect on how far they have come in three years.
           </p>
-          <p className="description--points">
+
+          {/* <p className="description--points">
             <b>Excitement</b>
           </p>
           <p className="description--points">
@@ -27,10 +33,10 @@ export default function Free() {
           </p>
           <p className="description--points">
             <b>Enthusiasm</b>
-          </p>
+          </p>  */}
         </div>
       </div>
-      <div className="event__cards">
+      {/* <div className="event__cards">
         <div className="event__card1">
           <Card
             image={super1}
@@ -51,7 +57,7 @@ export default function Free() {
             time={2}
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

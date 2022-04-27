@@ -85,6 +85,7 @@ export const EventsProvider = (props) => {
       tech: "Technical Event",
       cardLogo: "./assets/super1.png",
       staff: ["Prof.M.Marimuthu", "Prof.G.Mohanraj"],
+      rules: [],
       criteria:
         "Judgement is precisely based on the rank of scores obtained by the participants.",
       coordinators: [
@@ -184,6 +185,7 @@ export const EventsProvider = (props) => {
         "3. Plagiarism is strictly prohibited.",
         "4. No discussion among the participants during the event.",
       ],
+
       rounds: [
         "The first round is based on image meme",
         "The second round is based on video meme",

@@ -17,8 +17,10 @@ export default function Home() {
           <div className="blinker">On May 5 and 6</div>
 
           <p className="description">
-            Don't miss out on the release of our new NFT. Sign up below to
-            recieve updates when we go live.
+            Threads'22 - A National Level Technical symposium hosted by the
+            Department of Computer Science and Engineering in Sona College of
+            Technology, Salem. It provides a dias to exhibit the talents of the
+            student enthusiasts of numerous facets of computer science.
           </p>
           <button>Sign Up</button>
         </div>

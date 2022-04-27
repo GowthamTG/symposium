@@ -43,7 +43,11 @@ const DisplayEvents = ({ eve }) => {
         <div className="display-events__image-container">
           <div className="image">
             <Tilt gyroscope={true} glareEnable={true}>
-              <img src={poster} alt="home" ref={posterRef} />
+              <img
+                src={require(`../../assets/events/event${eve.id}.png`)}
+                alt="home"
+                ref={posterRef}
+              />
             </Tilt>
           </div>
           <div className="ellipse-container">

@@ -3,7 +3,15 @@ import React, { useRef, useState, useContext } from "react";
 import { validate } from "validate.js";
 import EventRegistrationTypeWriter from "./EventRegistrationTypeWriter";
 import { EventsContext } from "../../EventsContext";
-
+import { initializeApp } from "firebase/app";
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  doc,
+  setDoc,
+  addDoc,
+} from "firebase/firestore/lite";
 import "./Form.css";
 
 const EventRegistrationForm = (props) => {
@@ -79,16 +87,34 @@ const EventRegistrationForm = (props) => {
       presence: { allowEmpty: false, message: "College Name can't be blank" },
     },
   };
+  const firebaseConfig = {
+    apiKey: "AIzaSyCZRWhePnY8wpRy57IjgZaPilFK-z3JplQ",
+    authDomain: "threads22-cb396.firebaseapp.com",
+    projectId: "threads22-cb396",
+    storageBucket: "threads22-cb396.appspot.com",
+    messagingSenderId: "1088732062082",
+    appId: "1:1088732062082:web:128091aa2396e14fa2ef9b",
+  };
 
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  async function createUser(db, formData) {
+    const userDoc = collection(db, "users");
+    const res = await addDoc(userDoc, formData);
+    console.log(res);
+  }
   const submitHandler = (e) => {
     e.preventDefault();
+
     const formData = validate.collectFormValues(formRef.current);
-    const errors = validate(formData, validationRules);
-    if (errors) {
-      setformErrors(errors);
-    } else {
-      setformErrors();
-    }
+    createUser(db, formData);
+    // const errors = validate(formData, validationRules);
+    // if (errors) {
+    //   setformErrors(errors);
+    // } else {
+    //   setformErrors();
+    //   createUser(db, formData);
+    // }
   };
 
   return (
@@ -203,9 +229,9 @@ const EventRegistrationForm = (props) => {
                     <option value="3">3rd Year</option>
                     <option value="4">4th Year</option>
                   </motion.select>
-                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                     <svg
-                      class="fill-current h-4 w-4"
+                      className="fill-current h-4 w-4"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                     >

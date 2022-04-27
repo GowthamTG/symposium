@@ -10,7 +10,7 @@ export default function Navbar({ changeTheme, currentTheme }) {
   return (
     <nav>
       <div className="brand-container">
-        <div className="brand">
+        <div className=" brand blinker">
           {/* <img src={logo} alt="logo" /> */}Threads
         </div>
         <div className="toggle-container">

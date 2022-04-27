@@ -16,10 +16,7 @@ export default function Card({ id, posterImg, title, desc, tech }) {
   return (
     <div className="event__card">
       <div className="event__card-image">
-        <img
-          src={require(`../../assets/cards/event${4}card.png`)}
-          alt="super1"
-        />
+        <img src={require(`../../assets/cards/event${id}.png`)} alt="super1" />
       </div>
       <div className="event__card-content">
         <div className="event__card-heading">

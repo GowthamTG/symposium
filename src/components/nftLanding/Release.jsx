@@ -12,41 +12,12 @@ export default function Release() {
   };
   return (
     <div className="releases">
-      <div className="release orange">
-        <div className="content">
-          <h2 className="title">About Us</h2>
-          <p className="description">
-            The aim of symposium is to offer an authentic experience just like a
-            teaching and learning event.
-          </p>
-          <p className="description">
-            I) Symposium provides a lot of benefits to the students and some are
-            mentioned below. The benefits for students are
-          </p>
-          <p className="description">Increased confidence</p>
-          <p className="description">
-            II) Appreciation of the importance of telling the story of their
-            research.
-          </p>
-          <p className="description">
-            III) Understanding of the relevance of their own work in relation to
-            others the chance to see their peers present and to
-          </p>
-          {/* <Link to="/" className="link">
-            Check them out <BsArrowRight />
-          </Link> */}
-        </div>
-        <div className="image">
-          <img src={release1} alt="release" />
-          <div className="ellipse pink"></div>
-        </div>
-      </div>
       <div className="release green">
         <div className="event__card-container">
           <Card
             image={release2}
-            series="SCT"
-            title="CSE"
+            series="Sona"
+            title="Computer Science and Engineering"
             price={3.95}
             tag="1094"
             time={2}
