@@ -4,15 +4,18 @@ import { validate } from "validate.js";
 import EventRegistrationTypeWriter from "./EventRegistrationTypeWriter";
 import { EventsContext } from "../../EventsContext";
 import { initializeApp } from "firebase/app";
-import {
-  getFirestore,
-  collection,
-  getDocs,
-  doc,
-  setDoc,
-  addDoc,
-} from "firebase/firestore/lite";
+// import {
+//   getFirestore,
+//   collection,
+//   getDocs,
+//   doc,
+//   setDoc,
+//   addDoc,
+// } from "firebase/firestore/lite";
 import "./Form.css";
+
+import { db } from "../../firebase";
+import { collection, addDoc, Timestamp } from "firebase/firestore";
 
 const EventRegistrationForm = (props) => {
   const departments = [
@@ -87,34 +90,61 @@ const EventRegistrationForm = (props) => {
       presence: { allowEmpty: false, message: "College Name can't be blank" },
     },
   };
-  const firebaseConfig = {
-    apiKey: "AIzaSyCZRWhePnY8wpRy57IjgZaPilFK-z3JplQ",
-    authDomain: "threads22-cb396.firebaseapp.com",
-    projectId: "threads22-cb396",
-    storageBucket: "threads22-cb396.appspot.com",
-    messagingSenderId: "1088732062082",
-    appId: "1:1088732062082:web:128091aa2396e14fa2ef9b",
-  };
+  // const firebaseConfig = {
+  //   apiKey: "AIzaSyCZRWhePnY8wpRy57IjgZaPilFK-z3JplQ",
+  //   authDomain: "threads22-cb396.firebaseapp.com",
+  //   projectId: "threads22-cb396",
+  //   storageBucket: "threads22-cb396.appspot.com",
+  //   messagingSenderId: "1088732062082",
+  //   appId: "1:1088732062082:web:c5a5a9e0ccbfc819a2ef9b",
+  // };
 
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
+  // const app = initializeApp(firebaseConfig);
+  // const db = getFirestore(app);
   async function createUser(db, formData) {
     const userDoc = collection(db, "users");
-    const res = await addDoc(userDoc, formData);
-    console.log(res);
+    console.log(formData);
+    var userData = { ...formData };
+    userData.eventTransactionId = "";
+    userData.workshopTransactionId = "";
+    userData.paidForEvents = false;
+    userData.paidForWorkshops = false;
+    await addDoc(userDoc, userData).then(
+      (res) => {
+        console.log(res);
+        window.location.replace(
+          "https://pages.razorpay.com/pl_JO28xWu6XvGvEH/view"
+        );
+      },
+      (err) => {
+        console.log(err);
+      }
+    );
   }
+  // const db = firebase.collection("/users");
+
   const submitHandler = (e) => {
     e.preventDefault();
 
     const formData = validate.collectFormValues(formRef.current);
-    createUser(db, formData);
-    // const errors = validate(formData, validationRules);
-    // if (errors) {
-    //   setformErrors(errors);
-    // } else {
-    //   setformErrors();
-    //   createUser(db, formData);
-    // }
+    const errors = validate(formData, validationRules);
+    if (errors) {
+      setformErrors(errors);
+    } else {
+      createUser(db, formData);
+      setformErrors(errorsDefault);
+    }
+    // db.add(formData)
+    //   .then(() => {
+    //     console.log("Created new item successfully!");
+    //     this.setState({
+    //       submitted: true,
+    //     });
+    //   })
+    //   .catch((e) => {
+    //     console.log(e);
+    //   });
+    // createUser(db, formData);
   };
 
   return (
@@ -134,7 +164,7 @@ const EventRegistrationForm = (props) => {
             <h2 className="description card-heading">
               <EventRegistrationTypeWriter />
             </h2>
-            <form onSubmit={submitHandler}>
+            <form ref={formRef} onSubmit={submitHandler}>
               <div className="input-group">
                 <motion.input
                   name="name"
