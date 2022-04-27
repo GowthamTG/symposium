@@ -3,6 +3,7 @@ import React, { useRef, useState, useContext } from "react";
 import { validate } from "validate.js";
 import EventRegistrationTypeWriter from "./EventRegistrationTypeWriter";
 import { EventsContext } from "../../EventsContext";
+import { useParams } from "react-router-dom";
 import { initializeApp } from "firebase/app";
 // import {
 //   getFirestore,
@@ -18,6 +19,11 @@ import { db } from "../../firebase";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 
 const EventRegistrationForm = (props) => {
+  const { id } = useParams();
+  var paymentUrl = "https://rzp.io/l/JDTVjuEiER";
+  if (id > 10) {
+    paymentUrl = "https://rzp.io/l/jjIjs3O";
+  }
   const departments = [
     "Mechanical Engineering",
     "Mechatronics Engineering",
@@ -112,9 +118,7 @@ const EventRegistrationForm = (props) => {
     await addDoc(userDoc, userData).then(
       (res) => {
         console.log(res);
-        window.location.replace(
-          "https://pages.razorpay.com/pl_JO28xWu6XvGvEH/view"
-        );
+        window.location.replace(paymentUrl);
       },
       (err) => {
         console.log(err);
