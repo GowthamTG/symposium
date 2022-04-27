@@ -10,17 +10,15 @@ export default function Like() {
           <div className="image">
             <img src={eth1} alt="eth1" />
           </div>
-          <h2 className="title">Workshop</h2>
+          <h2 className="title">Workshops</h2>
           <p className="description">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            illo dolores natus et suscipit distinctio sequi nulla provident
-            maiores tenetur?
+            We conducting workshops on various grooming technologies like
+            Internet Of Things, Robotic Process Automation, App Development
           </p>
           <p className="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quidem, explicabo fuga reprehenderit quibusdam adipisci sint
-            ratione! Dicta tempore sunt saepe reiciendis quae, aliquid, nihil
-            quia iste quis animi pariatur!
+            These events are held on the idea of providing students a good
+            knowledge and helping them to build their career in those
+            technologies.
           </p>
         </div>
         <div className="content">
@@ -29,14 +27,12 @@ export default function Like() {
           </div>
           <h2 className="title">Events</h2>
           <p className="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-            quibusdam dolor officia laboriosam sequi, eius veritatis nemo
-            architecto eaque ea culpa dicta reiciendis sed debitis.
+            We conducting various technical and non technical events like Blind
+            code,Tech Quiz,Merge warehouse,Treasure Hunt etc...
           </p>
           <p className="description">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            ex incidunt atque libero itaque corporis et corrupti illum ducimus.
-            Accusamus repellat nemo sunt ipsa ea?
+            We are coducting these events on behalf of encouraging their
+            participation and to stimulate their knowledge.
           </p>
         </div>
       </div>

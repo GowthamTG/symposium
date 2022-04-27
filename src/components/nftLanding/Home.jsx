@@ -3,7 +3,7 @@ import React from "react";
 import home from "../../assets/ThreadsLogo.png";
 import Tilt from "react-parallax-tilt";
 
-import TypeWriterText from "../landingPage/TypeWriterText/TypeWriterText";
+import TypeWriterText from "../TypeWriterText/TypeWriterText";
 
 export default function Home() {
   return (

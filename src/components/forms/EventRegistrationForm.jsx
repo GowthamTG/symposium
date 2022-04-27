@@ -105,10 +105,10 @@ const EventRegistrationForm = (props) => {
     const userDoc = collection(db, "users");
     console.log(formData);
     var userData = { ...formData };
-    userData.eventTransactionId = "";
-    userData.workshopTransactionId = "";
-    userData.paidForEvents = false;
-    userData.paidForWorkshops = false;
+    // userData.eventTransactionId = "";
+    // userData.workshopTransactionId = "";
+    // userData.paidForEvents = false;
+    // userData.paidForWorkshops = false;
     await addDoc(userDoc, userData).then(
       (res) => {
         console.log(res);

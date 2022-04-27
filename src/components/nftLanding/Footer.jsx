@@ -1,40 +1,44 @@
 import React from "react";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/CollegeLogo.jpg";
+import logo1 from "../../assets/csi.png";
+import logo2 from "../../assets/ISTE.png";
 import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 import { FaTiktok } from "react-icons/fa";
 export default function Footer() {
   const links = [
-    {
-      title: "About",
-      data: ["About", "Terms", "Legal"],
-    },
-    {
-      title: "NFT",
-      data: ["OpenSea", "Maker", "Learn"],
-    },
+    // {
+    //   title: "About",
+    //   data: ["About", "Terms", "Legal"],
+    // },
+    // {
+    //   title: "NFT",
+    //   data: ["OpenSea", "Maker", "Learn"],
+    // },
     {
       title: "Contact",
-      data: ["Press", "Support"],
+      data: ["Shameel", "Babuji"],
     },
     {
-      title: "Social",
-      data: ["Twiiter", "Instagram"],
+      title: "Number",
+      data: ["79041 29628", "63825 25719"],
     },
   ];
   const socialLink = [
-    <BsFacebook />,
-    <BsTwitter />,
-    <BsInstagram />,
-    <FaTiktok />,
+    // <BsFacebook />,
+    // <BsTwitter />,
+    // <BsInstagram />,
+    // <FaTiktok />,
   ];
   return (
     <footer>
       <div className="upper">
         <div className="brand-container">
           <div className="brand">
-            <img src={logo} alt="logo" />
+            <img className="mr-4" src={logo} alt="logo" />{" "}
+            <img className="mr-4" src={logo1} alt="logo" />{" "}
+            <img src={logo2} alt="logo" />
           </div>
-          <p>Exclusive NFT Collection</p>
+          <p>Exclusive Event by SONA</p>
           <ul>
             {socialLink.map((link, index) => (
               <li key={index}>{link}</li>
@@ -56,10 +60,10 @@ export default function Footer() {
           })}
         </div>
       </div>
-      <div className="lower">
+      {/* <div className="lower">
         <span>&copy; Copyright 2022 NFT</span>
         <span>Launching August 2022</span>
-      </div>
+      </div> */}
     </footer>
   );
 }

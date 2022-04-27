@@ -104,7 +104,7 @@ const Events = () => {
         <div className="event__cards">
           <div className="container testimonial">
             <Slider {...settings}>
-              {events.map((event) => (
+              {events.slice(0, 10).map((event) => (
                 <EventCard
                   key={event.time}
                   id={event.id}

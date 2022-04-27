@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Card({ id, image, series, title, price, tag, time }) {
   return (
-    <Link to={`event/${id}`} style={{ textDecoration: "none" }}>
+    <Link to={`events/${id}`} style={{ textDecoration: "none" }}>
       <div className="event__card">
         <div className="event__card-image">
           <img src={image} alt="super1" />
