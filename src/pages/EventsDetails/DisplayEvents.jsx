@@ -76,13 +76,13 @@ const DisplayEvents = ({ eve }) => {
               {eve.date}, {eve.timing}
             </span>
           </p>
-          {eve.criteria > 0 && (
+          {eve.criteria.length > 0 && (
             <div>
               <p className="hall">Criteria:</p>
               <p className="description">{eve.criteria}</p>
             </div>
           )}
-          {eve.rules > 0 && (
+          {eve.rules.length > 0 && (
             <div>
               <p className="hall">Rules:</p>
 
@@ -91,7 +91,7 @@ const DisplayEvents = ({ eve }) => {
               ))}
             </div>
           )}
-          {eve.rounds > 0 && (
+          {eve.rounds.length > 0 && (
             <div>
               <p className="hall">Rounds:</p>
 
@@ -102,7 +102,7 @@ const DisplayEvents = ({ eve }) => {
               ))}
             </div>
           )}
-          {eve.staff > 0 && (
+          {eve.staff.length > 0 && (
             <div>
               <p className="hall">Staffs:</p>
               <div className="org-list">
@@ -114,7 +114,7 @@ const DisplayEvents = ({ eve }) => {
               </div>
             </div>
           )}{" "}
-          {eve.coordinators > 0 && (
+          {eve.coordinators.length > 0 && (
             <div>
               <p className="hall">Coordinators:</p>
 
@@ -123,7 +123,7 @@ const DisplayEvents = ({ eve }) => {
               ))}
             </div>
           )}{" "}
-          {eve.organiser > 0 && (
+          {eve.organiser.length > 0 && (
             <div>
               <p className="hall">Organizers:</p>
 

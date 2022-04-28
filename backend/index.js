@@ -27,7 +27,8 @@ app.post("/payment/event", async (req, res) => {
 
   if (
     req.body.payload.payment.entity.status === "captured" &&
-    req.body.payload.payment.entity.captured
+    req.body.payload.payment.entity.captured &&
+    req.body.payload.payment.entity.amount === 300
   ) {
     userSnapshot.forEach(async (user) => {
       const userRef = doc(db, "users", user.id);
@@ -54,7 +55,8 @@ app.post("/payment/workshop", async (req, res) => {
 
   if (
     req.body.payload.payment.entity.status === "captured" &&
-    req.body.payload.payment.entity.captured
+    req.body.payload.payment.entity.captured &&
+    req.body.payload.payment.entity.amount === 200
   ) {
     userSnapshot.forEach(async (user) => {
       const userRef = doc(db, "users", user.id);
