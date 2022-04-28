@@ -65,10 +65,10 @@
       align-items: center;
       position: relative;
       z-index: 1;
-      overflow: hidden;
+      // overflow: hidden;
       .event__card-image {
         img {
-          width: 350px;
+          height: 14rem;
         }
       }
       .ellipse {

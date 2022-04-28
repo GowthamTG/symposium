@@ -76,50 +76,62 @@ const DisplayEvents = ({ eve }) => {
               {eve.date}, {eve.timing}
             </span>
           </p>
-          <div>
-            <p className="hall">Criteria:</p>
-            <p className="description">{eve.criteria}</p>
-          </div>
-          <div>
-            <p className="hall">Rules:</p>
+          {eve.criteria > 0 && (
+            <div>
+              <p className="hall">Criteria:</p>
+              <p className="description">{eve.criteria}</p>
+            </div>
+          )}
+          {eve.rules > 0 && (
+            <div>
+              <p className="hall">Rules:</p>
 
-            {eve.rules.map((s, index) => (
-              <div className="description">{s}</div>
-            ))}
-          </div>
-          <div>
-            <p className="hall">Rounds:</p>
-
-            {eve.rounds.map((s, index) => (
-              <div className="description">
-                <b>Round {index + 1}</b> {s}
-              </div>
-            ))}
-          </div>
-          <div>
-            <p className="hall">Staffs:</p>
-            <div className="org-list">
-              {eve.staff.map((s) => (
-                <p className="description">
-                  <b>{s}</b>
-                </p>
+              {eve.rules.map((s, index) => (
+                <div className="description">{s}</div>
               ))}
             </div>
-          </div>
-          <div>
-            <p className="hall">Coordinators:</p>
+          )}
+          {eve.rounds > 0 && (
+            <div>
+              <p className="hall">Rounds:</p>
 
-            {eve.coordinators.map((cor) => (
-              <p className="description">{cor}</p>
-            ))}
-          </div>
-          <div>
-            <p className="hall">Organizers:</p>
+              {eve.rounds.map((s, index) => (
+                <div className="description">
+                  <b>Round {index + 1}</b> {s}
+                </div>
+              ))}
+            </div>
+          )}
+          {eve.staff > 0 && (
+            <div>
+              <p className="hall">Staffs:</p>
+              <div className="org-list">
+                {eve.staff.map((s) => (
+                  <p className="description">
+                    <b>{s}</b>
+                  </p>
+                ))}
+              </div>
+            </div>
+          )}{" "}
+          {eve.coordinators > 0 && (
+            <div>
+              <p className="hall">Coordinators:</p>
 
-            {eve.organiser.map((org) => (
-              <p className="description">{org}</p>
-            ))}
-          </div>
+              {eve.coordinators.map((cor) => (
+                <p className="description">{cor}</p>
+              ))}
+            </div>
+          )}{" "}
+          {eve.organiser > 0 && (
+            <div>
+              <p className="hall">Organizers:</p>
+
+              {eve.organiser.map((org) => (
+                <p className="description">{org}</p>
+              ))}
+            </div>
+          )}
           <Link to={`/registration/${eve.id}`}>
             <button className="display-events__button">Register Now</button>
           </Link>
