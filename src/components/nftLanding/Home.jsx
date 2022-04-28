@@ -2,7 +2,7 @@ import React from "react";
 // import home from "../../assets/home.png";
 import home from "../../assets/ThreadsLogo.png";
 import Tilt from "react-parallax-tilt";
-
+import { Link } from "react-router-dom";
 import TypeWriterText from "../TypeWriterText/TypeWriterText";
 
 export default function Home() {
@@ -22,7 +22,9 @@ export default function Home() {
             Technology, Salem. It provides a dias to exhibit the talents of the
             student enthusiasts of numerous facets of computer science.
           </p>
-          <button>Sign Up</button>
+          <Link to="/events">
+            <button>Check Out More</button>
+          </Link>
         </div>
         <div className="image-container">
           <div className="image">

@@ -1,6 +1,5 @@
 import React from "react";
-import EventCard from "../../components/card/Card";
-import { Link } from "react-router-dom";
+
 import super1 from "../../assets/super1.png";
 import super2 from "../../assets/super2.png";
 import super3 from "../../assets/super3.png";

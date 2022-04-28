@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import poster from "../../assets/poster.jpeg";
+
 import Tilt from "react-parallax-tilt";
 import { gsap } from "gsap";
 import "./eventsDetails.scss";

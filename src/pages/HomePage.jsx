@@ -39,7 +39,7 @@
 // export default HomePage;
 
 import React, { useState, useEffect } from "react";
-import Clients from "../components/nftLanding/Clients";
+
 import Footer from "../components/nftLanding/Footer";
 import Free from "../components/nftLanding/Free";
 import Home from "../components/nftLanding/Home";

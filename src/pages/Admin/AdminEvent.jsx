@@ -1,12 +1,8 @@
-import React, { useState, useContext } from "react";
-import { createStyles, makeStyles } from "@material-ui/core/styles";
-import Box from "@mui/material/Box";
+import React, { useState } from "react";
 
 import "./AdminEvent.scss";
-import { themeContext } from "../../Context";
 
 import { DataGrid } from "@mui/x-data-grid";
-import { useParams } from "react-router-dom";
 
 export default function AdminHome() {
   const userColumns = [

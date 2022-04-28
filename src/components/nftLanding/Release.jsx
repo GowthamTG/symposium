@@ -1,7 +1,6 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
-import { Link } from "react-router-dom";
-import release1 from "../../assets/release1.png";
+
 import release2 from "../../assets/Throwback.jpeg";
 import Card from "./Card";
 

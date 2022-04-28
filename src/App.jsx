@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import "./index.css";
 import "./styles/index.scss";
@@ -16,14 +16,14 @@ import PageTwo from "./pages/PageTwo";
 import Events from "./pages/Events";
 import AdminHome from "./pages/Admin/AdminHome";
 import AdminEvent from "./pages/Admin/AdminEvent";
-import EventRegistrationPage from "./pages/EventRegistrationPage";
+// import EventRegistrationPage from "./pages/EventRegistrationPage";
 import EventsDetails from "./pages/EventsDetails/EventsDetails";
 import EventRegistrationForm from "./components/forms/EventRegistrationForm";
-import { EventsProvider } from './EventsContext'
+import { EventsProvider } from "./EventsContext";
 
 function App() {
   return (
-    <EventsProvider >
+    <EventsProvider>
       <BrowserRouter>
         <Layout>
           <Routes>
