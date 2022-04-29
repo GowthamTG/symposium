@@ -81,3 +81,21 @@ app.listen(process.env.PORT || 3000, function () {
     app.settings.env
   );
 });
+
+const test = [
+  {
+    college: "sona college of technology",
+    department: "Electrical & Electronics Engineering",
+    email: "ragulhchc@gmail.com",
+    name: "Ragul",
+    phone: "8778324497",
+    regno: "123456",
+    year: "3",
+    paidForEvents: true,
+    eventPaymentId: "Some ID",
+    eventOrderId: "Some ID",
+    paidForWorkshops: true,
+    workshopPaymentId: "Some ID",
+    workshopOrderId: "Some ID",
+  },
+];

@@ -5,6 +5,7 @@ import EventRegistrationTypeWriter from "./EventRegistrationTypeWriter";
 import { EventsContext } from "../../EventsContext";
 import { useParams } from "react-router-dom";
 import { initializeApp } from "firebase/app";
+import { Route } from "react-router-dom";
 // import {
 //   getFirestore,
 //   collection,
@@ -17,6 +18,7 @@ import "./Form.css";
 
 import { db } from "../../firebase";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
+import UserCreated from "../../pages/UserCreated";
 
 const EventRegistrationForm = (props) => {
   const { id } = useParams();
@@ -107,18 +109,19 @@ const EventRegistrationForm = (props) => {
 
   // const app = initializeApp(firebaseConfig);
   // const db = getFirestore(app);
-  async function createUser(db, formData) {
+  async function createUser(db, formData, redirect) {
     const userDoc = collection(db, "users");
     console.log(formData);
     var userData = { ...formData };
-    // userData.eventTransactionId = "";
-    // userData.workshopTransactionId = "";
-    // userData.paidForEvents = false;
-    // userData.paidForWorkshops = false;
     await addDoc(userDoc, userData).then(
       (res) => {
         console.log(res);
-        window.location.replace(paymentUrl);
+        if (redirect) {
+          window.location.replace(paymentUrl);
+        } else {
+          window.location.href = "/user-created";
+          // <Route path="/user-created" component={UserCreated} />;
+        }
       },
       (err) => {
         console.log(err);
@@ -135,20 +138,20 @@ const EventRegistrationForm = (props) => {
     if (errors) {
       setformErrors(errors);
     } else {
-      createUser(db, formData);
+      createUser(db, formData, true);
       setformErrors(errorsDefault);
     }
-    // db.add(formData)
-    //   .then(() => {
-    //     console.log("Created new item successfully!");
-    //     this.setState({
-    //       submitted: true,
-    //     });
-    //   })
-    //   .catch((e) => {
-    //     console.log(e);
-    //   });
-    // createUser(db, formData);
+  };
+
+  const payLater = (e) => {
+    const formData = validate.collectFormValues(formRef.current);
+    const errors = validate(formData, validationRules);
+    if (errors) {
+      setformErrors(errors);
+    } else {
+      createUser(db, formData, false);
+      setformErrors(errorsDefault);
+    }
   };
 
   return (
@@ -330,8 +333,15 @@ const EventRegistrationForm = (props) => {
                 )}
               </div>
               <div className="p-t-10">
+                <button
+                  onClick={payLater}
+                  className="btn btn--pill btn--green"
+                  type="button"
+                >
+                  Pay Later
+                </button>{" "}
                 <button className="btn btn--pill btn--green" type="submit">
-                  Submit
+                  Pay Now
                 </button>
               </div>
             </form>

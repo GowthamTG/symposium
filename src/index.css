@@ -16,6 +16,10 @@ code {
     monospace;
 } */
 
+.registerd--page {
+  height: 100vh !important;
+}
+
 .sign {
   display: flex;
   background-image: radial-gradient(
